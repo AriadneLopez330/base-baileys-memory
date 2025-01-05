@@ -1,5 +1,5 @@
 const { addKeyword, EVENTS, addAnswer, ProviderClass } = require('@bot-whatsapp/bot')
-const ChatGPTClass = require('./chatgpt.class'); //mandar a llamar a la clase ChatGPTClass
+const ChatGPTClass = require('./src/chatgpt.class'); //mandar a llamar a la clase ChatGPTClass
 
 const ChatGPTInstance = new ChatGPTClass();
 

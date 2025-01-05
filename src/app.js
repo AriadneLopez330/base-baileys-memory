@@ -11,7 +11,7 @@ const { PROMP } = require('./promp');
 const { contentwarehouse } = require('googleapis/build/src/apis/contentwarehouse');
 const { chat } = require('googleapis/build/src/apis/chat');
 const { default: visitas } = require('./visitas');
-const SSOCIAL = require('./SSOCIAL');//IMPORTACION DE SERVIOCIO SOCIAL
+const SSOCIAL = require('../SSOCIAL');//IMPORTACION DE SERVIOCIO SOCIAL
 //import SSOCIAL from ('./SSOCIAL')
 //const path = require("path")
 //const fs = require("fs")
