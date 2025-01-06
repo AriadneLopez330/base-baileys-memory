@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0", // esto es una cosa interna de vscode, me imagino que se refiere a la version de vscode 
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "start:ide",
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
+}

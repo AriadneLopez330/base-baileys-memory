@@ -1,0 +1,38 @@
+[
+  {
+    "ref": "1dac6526-fd93-488b-b000-1875e0ba7c55",
+    "keyword": "cf3704f30749922b41aab9ffb31b4080",
+    "answer": "H",
+    "options": {},
+    "from": "34668574900",
+    "refSerialize": "ff1074a08d544026a56e516f49298f06"
+  },
+  {
+    "ref": "ans_6640b634-608b-40a8-9a78-7df1d6257781",
+    "keyword": "key_fad852eb-d47c-4a42-98c5-32c9a4276488",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "3c74b87d1c72552cb935ffc126c8532f",
+    "from": "34668574900"
+  },
+  {
+    "ref": "705e8be0-d48a-4189-85c7-601938be1543",
+    "keyword": null,
+    "answer": "Hello! How can I assist you today?",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "34668574900",
+    "refSerialize": "2d565016d544c4634ab1327fed2a311b"
+  }
+]
