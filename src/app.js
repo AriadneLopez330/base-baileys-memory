@@ -3,16 +3,16 @@ import { JsonFileDB as Database } from '@builderbot/database-json';
 import { BaileysProvider as Provider } from '@builderbot/provider-baileys';
 import { PORT } from './config.js';
 import { welcomeFlow } from './flows/wellcomeFlow.js';
+import { menuGeneral } from './flows/menuGeneralFlow.js';
 // import { MongoDB } from '@builderbot/database-mongo'
 // import { MONGO_DB_URI, MONGO_DB_NAME } from './config.js'
-import dbJson from './db/db.json'
 
 const main = async () => {
-  const adapterFlow = createFlow([welcomeFlow]);
+  const adapterFlow = createFlow([welcomeFlow, menuGeneral]);
   const adapterProvider = createProvider(Provider);
 
   // BASE DE DATOS JSON
-  const adapterJSONDB = new Database({ filename: dbJson });
+  const adapterJSONDB = new Database({ filename: ('./db.json') });
 
   // BASE DE DATOS MONGO
   // const adapterMongoDB = new MongoDB({
