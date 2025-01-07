@@ -1,15 +1,15 @@
 [
   {
-    "ref": "1dac6526-fd93-488b-b000-1875e0ba7c55",
-    "keyword": "cf3704f30749922b41aab9ffb31b4080",
-    "answer": "H",
+    "ref": "9b5ed2cd-5a44-40a2-afda-21897f508802",
+    "keyword": "775c977a28bb0d2365498454490aaeb9",
+    "answer": "Hola",
     "options": {},
     "from": "34668574900",
-    "refSerialize": "ff1074a08d544026a56e516f49298f06"
+    "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
   },
   {
-    "ref": "ans_6640b634-608b-40a8-9a78-7df1d6257781",
-    "keyword": "key_fad852eb-d47c-4a42-98c5-32c9a4276488",
+    "ref": "ans_145e5872-ca05-4324-881b-6f13a9323c4c",
+    "keyword": "key_cb642bf6-0962-4cfa-b8a7-f1a2924ef81d",
     "answer": "__call_action__",
     "options": {
       "buttons": [],
@@ -19,13 +19,13 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "3c74b87d1c72552cb935ffc126c8532f",
+    "refSerialize": "79cec8ce0f328af3fc28ac71630d1681",
     "from": "34668574900"
   },
   {
-    "ref": "705e8be0-d48a-4189-85c7-601938be1543",
+    "ref": "b76ed759-c685-46c9-bb5a-b2dd3fe79627",
     "keyword": null,
-    "answer": "Hello! How can I assist you today?",
+    "answer": "¡Hola! ¿En qué puedo ayudarte hoy?",
     "options": {
       "media": null,
       "buttons": [],
@@ -33,6 +33,6 @@
       "delay": 0
     },
     "from": "34668574900",
-    "refSerialize": "2d565016d544c4634ab1327fed2a311b"
+    "refSerialize": "1b4031b59fda57c445fa2b1e23b98e5d"
   }
 ]

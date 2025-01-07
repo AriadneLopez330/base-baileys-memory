@@ -4,7 +4,7 @@ import { addKeyword, EVENTS } from '@builderbot/bot';
 ///////////////////flujo primario para el departamento de manera general///////////////////////
 
 const menuGeneral = addKeyword(EVENTS.WELCOME)
-  .addAnswer('Menu departamento')
+  .addAnswer('Bienvenido! Menu departamento')
   .addAnswer(
     ['1-.Servicio Social', '2-.Visitas Industiales', '3-.Residencias (Poliza)'],
     { capture: true },

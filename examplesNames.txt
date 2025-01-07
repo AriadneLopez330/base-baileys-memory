@@ -1,0 +1,16 @@
+// UPPER SNAKE_CASE
+// variables de entorno
+export const MAXIMO_INTENTOS = 5;
+
+// camelCase
+export const maxIntentosCincoPalabra  = 5;
+// PascalCase
+export const MaxIntentosCincoPalabra = 5;
+
+
+// kebal-case
+// export const max-intentos = 5;
+
+
+
+

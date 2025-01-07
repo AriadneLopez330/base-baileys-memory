@@ -2,11 +2,7 @@ import { addKeyword } from '@builderbot/bot';
 import { menuGeneral } from './menuGeneralFlow.js';
 ///////////////////////////////
 //FLUJO PRIMARIO
-const flowGracias = addKeyword([
-  'gracias',
-  'grac',
-  'seria todo, gracias',
-]).addAnswer(
+const flowGracias = addKeyword(['gracias']).addAnswer(
   [
     'De nada',
     'Fue un placer',
