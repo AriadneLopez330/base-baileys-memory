@@ -5,13 +5,14 @@ import { PORT } from './config.js';
 import { welcomeFlow } from './flows/wellcomeFlow.js';
 // import { MongoDB } from '@builderbot/database-mongo'
 // import { MONGO_DB_URI, MONGO_DB_NAME } from './config.js'
+import dbJson from './db/db.json'
 
 const main = async () => {
   const adapterFlow = createFlow([welcomeFlow]);
   const adapterProvider = createProvider(Provider);
 
   // BASE DE DATOS JSON
-  const adapterJSONDB = new Database({ filename: 'db.json' });
+  const adapterJSONDB = new Database({ filename: dbJson });
 
   // BASE DE DATOS MONGO
   // const adapterMongoDB = new MongoDB({
