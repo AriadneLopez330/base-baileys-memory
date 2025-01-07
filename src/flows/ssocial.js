@@ -398,3 +398,4 @@ const MenuPrincipal = addKeyword ('1')
             }
         }
     );
+    export {MenuPrincipal};
