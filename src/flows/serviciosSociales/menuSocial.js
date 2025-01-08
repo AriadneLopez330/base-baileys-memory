@@ -1,5 +1,6 @@
 import { addKeyword, EVENTS } from '@builderbot/bot';
-import { flowDocs, flowVideo, flowFechas, flowDudas, flowGPT, flowContacto } from './ssocialflow.js';
+import { flowDocs, flowVideo, flowFechas, flowGPT, flowContactoSS } from './ssocialflow.js';
+import { flowMenuDudas } from './dudasFrecuentes/menuDudasFlow.js';
 
 ////////////////////////////Menu principal de servicio social///////////////////////////////////////
 export const menuSocial = addKeyword(EVENTS.WELCOME)
@@ -34,11 +35,11 @@ export const menuSocial = addKeyword(EVENTS.WELCOME)
         case '3':
           return gotoFlow(flowFechas);
         case '4':
-          return gotoFlow(flowDudas);
+          return gotoFlow(flowMenuDudas);
         case '5':
           return gotoFlow(flowGPT);
         case '6':
-          return gotoFlow(flowContacto);
+          return gotoFlow(flowContactoSS);
         case 'salir':
           return await flowDynamic('saliendo, ¡bye!');
       }

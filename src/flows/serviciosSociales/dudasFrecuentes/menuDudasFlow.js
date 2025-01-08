@@ -13,7 +13,7 @@ import {
 } from './dudasFlows.js';
 
 // flujo dudas donde se vacían todas las preguntas más frecuentes del servicio social
-export const flowDudas = addKeyword(['Dudas', 'duda', 'dud'])
+export const flowMenuDudas = addKeyword(['Dudas', 'duda', 'dud'])
   .addAnswer('🙌 Hola ¿qué puedo hacer para usted?')
   .addAnswer(
     [

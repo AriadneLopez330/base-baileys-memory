@@ -2,7 +2,7 @@ import { addKeyword, EVENTS } from '@builderbot/bot';
 
 import { handleQueue } from '../../utils/chatgpt.js';
 
-const flowContacto = addKeyword([
+const flowContactoSS = addKeyword([
   'Contacto',
   'correo',
   'Encargada de servicio social',
@@ -21,7 +21,7 @@ const flowContacto = addKeyword([
   'Teléfono: (664) 607-84-00 Ext. 204', //🗝️ACTUALIZAR EN CAMBIO ADMINISTRATIVO
   '<serviciosocialotay@tectijuana.edu.mx>',
 ]);
-const flowMenu = addKeyword(['1', 'Menu', 'menú'])
+export const flowMenu = addKeyword(['1', 'Menu', 'menú'])
   .addAnswer(['¡Hasta la próxima, Galgo!', '*Menú* si tienes mas consultas'])
   .addAnswer(
     { capture: true, buttons: [{ body: 'Ir a Menú' }] },
@@ -32,7 +32,7 @@ const flowMenu = addKeyword(['1', 'Menu', 'menú'])
         return endFlow({
           body: '❌ Su solicitud ha sido cancelada ❌', // Aquí terminamos el flow si la condición se cumple
         });
-      return flowPrincipal();
+      return flowMenu();
     },
   );
 const flowCrono = addKeyword([
@@ -119,4 +119,4 @@ const flowGPT = addKeyword(['documentos servicio social', 'preguntas', '5'])
     },
   );
 
-export { MenuPrincipal };
+export {flowCrono, flowDocs, flowVideo, flowFechas, flowGPT, flowContactoSS };

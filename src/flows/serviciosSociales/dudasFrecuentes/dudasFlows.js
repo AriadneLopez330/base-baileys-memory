@@ -1,7 +1,6 @@
 import { addKeyword } from '@builderbot/bot';
-import { flowMenu } from '../menuSocial.js';
 import { flowCrono } from '../ssocialflow.js';
-import { menuDudasFlow } from './menuDudasFlow.js';
+import { flowMenuDudas } from './menuDudasFlow.js';
 
 //////////////////////////// OPCIONES DE FLUJO DUDAS ///////////////////////////
 const duda1 = addKeyword('1')
@@ -16,7 +15,7 @@ const duda1 = addKeyword('1')
     ['\n*1* o *Menú* Para Terminar la consulta'], // el cierre de objeto debe de ser antes de null, para que no se muestre 'menú [objeto]', en el despliegue del mensaje
     null,
     null,
-    [menuDudasFlow],
+    [flowMenuDudas],
   );
 //¿Cuándo inicia el servicio social?
 const duda2 = addKeyword(['2', 'Cuando inicia'])
@@ -27,7 +26,7 @@ const duda2 = addKeyword(['2', 'Cuando inicia'])
     '5 de agosto al 19 de agosto del 2024', //🗝️ACTUALIZAR CADA SEMESTRE
   ])
   .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenu,
+    flowMenuDudas,
   ])
   .addAnswer(
     ['*Cronograma* para consultar "Fechas Importantes de Servicio Social"'],
@@ -46,7 +45,7 @@ const duda3 = addKeyword(['3'])
     '*Ejemplo*',
     '*Fecha inicial:* _Lunes 05 de Agosto 2024_ *Terminación:* _Jueves 06 de Febrero 2025_', //🗝️ACTUALIZAR CADA SEMESTRE
   ])
-  .addAnswer(['\n*1* Para Terminar la consulta'], null, null, [flowMenu]);
+  .addAnswer(['\n*1* Para Terminar la consulta'], null, null, [flowMenuDudas]);
 //'No aparece el Servicio Social marcado en AMBAR como materia'
 const duda4 = addKeyword('4')
   .addAnswer([
@@ -56,7 +55,7 @@ const duda4 = addKeyword('4')
     '3.- Es importante guardar el comprobante de pago del semestre en curso, y anexarlo en un mismo documento al subir tu kardex a la plataforma, solo en caso de ser necesario',
   ])
   .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenu,
+    flowMenuDudas,
   ]);
 //¿Hasta cuándo tengo para subir los documentos?
 const duda5 = addKeyword('5')
@@ -75,7 +74,7 @@ const duda5 = addKeyword('5')
     [flowCrono],
   )
   .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenu,
+    flowMenuDudas,
   ]);
 // '¿Dónde puedo realizar mi servicio Social?
 const duda6 = addKeyword('6')
@@ -86,7 +85,7 @@ const duda6 = addKeyword('6')
     'https://goo.su/czvxuq', //🗝️ACTUALIZAR CADA SEMESTRE
   ])
   .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenu,
+    flowMenuDudas,
   ]);
 //Constancia de liberación
 const duda7 = addKeyword('7')
@@ -103,7 +102,7 @@ const duda7 = addKeyword('7')
     '*Unidad (Tomas aquino u Otay)*',
   ])
   .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenu,
+    flowMenuDudas,
   ]);
 //'Me llegó un correo para darme de baja, ¿qué debo de hacer?'
 const duda8 = addKeyword(['8'])
@@ -118,7 +117,7 @@ const duda8 = addKeyword(['8'])
     '*Unidad Perteneciente* (Tomas Aquino u Otay)',
   ])
   .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenu,
+    flowMenuDudas,
   ]);
 
 const duda9 = addKeyword([
@@ -131,7 +130,7 @@ const duda9 = addKeyword([
     'Si ya pasó más tiempo, puedes volver a mandar correo reafirmando que ya subiste tus documentos, es fundamental darle seguimiento a tu expediente vía correo electrónico.',
   ])
   .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenu,
+    flowMenuDudas,
   ]);
 
   const duda10 = addKeyword(['10', '¿Dónde puedo obtener mi seguro facultativo?'])
@@ -145,7 +144,7 @@ const duda9 = addKeyword([
     '👉👈', //🗝️ACTUALIZAR CADA SEMESTRE--------------------------------------------
   ])
   .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenu,
+    flowMenuDudas,
   ]);
 
 
@@ -155,13 +154,9 @@ const questionBackFlow = addKeyword([])
   ], {capture: true},
   async (ctx, {gotoFlow, fallback, flowDynamic}) => {
     if (ctx.body === '1') {
-      return gotoFlow(dudasFlow)
+      return gotoFlow(flowMenuDudas)
     }
-  }
-)
-
-
-
+  })
 
 export {
   duda1,
