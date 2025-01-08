@@ -1,38 +1,213 @@
 [
   {
-    "ref": "9b5ed2cd-5a44-40a2-afda-21897f508802",
-    "keyword": "775c977a28bb0d2365498454490aaeb9",
+    "ref": "695e6fc4-8843-4ea8-a664-40ea5941fe25",
     "answer": "Hola",
     "options": {},
     "from": "34668574900",
     "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
   },
   {
-    "ref": "ans_145e5872-ca05-4324-881b-6f13a9323c4c",
-    "keyword": "key_cb642bf6-0962-4cfa-b8a7-f1a2924ef81d",
-    "answer": "__call_action__",
+    "ref": "ans_9a6c28e8-ba19-4024-b3f5-5b392911fe54",
+    "keyword": "key_604a33e7-8bd2-4930-acc2-a946665154d4",
+    "answer": "Bienvenido! Menu departamento",
     "options": {
       "buttons": [],
       "capture": false,
       "delay": 0,
       "nested": [],
       "keyword": {},
-      "callback": true
+      "callback": false
     },
-    "refSerialize": "79cec8ce0f328af3fc28ac71630d1681",
+    "refSerialize": "729b4fdac83455e45d7b78a9c4526979",
     "from": "34668574900"
   },
   {
-    "ref": "b76ed759-c685-46c9-bb5a-b2dd3fe79627",
-    "keyword": null,
-    "answer": "¡Hola! ¿En qué puedo ayudarte hoy?",
+    "ref": "ans_d09bab11-d362-4a4c-9d09-5bef1123581f",
+    "keyword": "ans_9a6c28e8-ba19-4024-b3f5-5b392911fe54",
+    "answer": "1. Servicio Social\n2. Visitas Industiales\n3. Residencias (Poliza)",
     "options": {
-      "media": null,
       "buttons": [],
       "capture": false,
-      "delay": 0
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
     },
+    "refSerialize": "219675a5f31c0fcef4585f2b407c54cb",
+    "from": "34668574900"
+  },
+  {
+    "ref": "ans_81edf005-9520-4322-9f33-e3253ae1bc5e",
+    "keyword": "ans_d09bab11-d362-4a4c-9d09-5bef1123581f",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "f65d31f0a5ff9838c7547e1829f78e6c",
+    "from": "34668574900"
+  },
+  {
+    "ref": "ans_9a6c28e8-ba19-4024-b3f5-5b392911fe54",
+    "keyword": "key_604a33e7-8bd2-4930-acc2-a946665154d4",
+    "answer": "Bienvenido! Menu departamento",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "729b4fdac83455e45d7b78a9c4526979",
+    "from": "5216644307401"
+  },
+  {
+    "ref": "ans_d09bab11-d362-4a4c-9d09-5bef1123581f",
+    "keyword": "ans_9a6c28e8-ba19-4024-b3f5-5b392911fe54",
+    "answer": "1. Servicio Social\n2. Visitas Industiales\n3. Residencias (Poliza)",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "219675a5f31c0fcef4585f2b407c54cb",
+    "from": "5216644307401"
+  },
+  {
+    "ref": "ans_81edf005-9520-4322-9f33-e3253ae1bc5e",
+    "keyword": "ans_d09bab11-d362-4a4c-9d09-5bef1123581f",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "f65d31f0a5ff9838c7547e1829f78e6c",
+    "from": "5216644307401"
+  },
+  {
+    "ref": "a3edd159-e296-4020-93cf-520669d1aa4c",
+    "keyword": "f65d31f0a5ff9838c7547e1829f78e6c",
+    "answer": "1",
+    "options": {},
+    "from": "5216644307401",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_c31ca270-5c41-4078-a6b9-f22fe29faabc",
+    "keyword": "key_21998caa-c86b-4f3b-88b9-08ce63efaefe",
+    "answer": "¿Como puedo ayudarte?😁",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "from": "5216644307401"
+  },
+  {
+    "ref": "ans_06eaceb7-2541-47d9-a2da-83dd03b79718",
+    "keyword": "ans_c31ca270-5c41-4078-a6b9-f22fe29faabc",
+    "answer": "Te comparto los siguientes links de interés sobre el proceso\n\n                             *SERVICIO SOCIAL*\n_Departamento De Gestión Tecnológica Y Vinculación_\n\n🧾 *1* Para ver la documentación\n🎬 *2* Para Dudas Generales (Video)\n👉 *3* Fechas Importantes del Servicio Social\n🤔 *4* Dudas Frecuentes de los alumnos\n📂 *5* Consulta respecto a documentos de servicio social\n👩‍💻 *6* CONTACTO Unidad Tomas Aquino y OTAY ",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "from": "5216644307401"
+  },
+  {
+    "ref": "ans_ca42f62e-61f5-4b2f-b989-702da4f945e9",
+    "keyword": "ans_06eaceb7-2541-47d9-a2da-83dd03b79718",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "from": "5216644307401"
+  },
+  {
+    "ref": "3dddf110-e1b7-42b7-a99e-34edddb2cca0",
+    "answer": "1",
+    "options": {},
+    "from": "5216644307401",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "d8da60f7-861c-44e5-874e-7bb8eb80a5f5",
+    "keyword": "f65d31f0a5ff9838c7547e1829f78e6c",
+    "answer": "1",
+    "options": {},
     "from": "34668574900",
-    "refSerialize": "1b4031b59fda57c445fa2b1e23b98e5d"
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_c31ca270-5c41-4078-a6b9-f22fe29faabc",
+    "keyword": "key_21998caa-c86b-4f3b-88b9-08ce63efaefe",
+    "answer": "¿Como puedo ayudarte?😁",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "from": "34668574900"
+  },
+  {
+    "ref": "ans_06eaceb7-2541-47d9-a2da-83dd03b79718",
+    "keyword": "ans_c31ca270-5c41-4078-a6b9-f22fe29faabc",
+    "answer": "Te comparto los siguientes links de interés sobre el proceso\n\n                             *SERVICIO SOCIAL*\n_Departamento De Gestión Tecnológica Y Vinculación_\n\n🧾 *1* Para ver la documentación\n🎬 *2* Para Dudas Generales (Video)\n👉 *3* Fechas Importantes del Servicio Social\n🤔 *4* Dudas Frecuentes de los alumnos\n📂 *5* Consulta respecto a documentos de servicio social\n👩‍💻 *6* CONTACTO Unidad Tomas Aquino y OTAY ",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "from": "34668574900"
+  },
+  {
+    "ref": "ans_ca42f62e-61f5-4b2f-b989-702da4f945e9",
+    "keyword": "ans_06eaceb7-2541-47d9-a2da-83dd03b79718",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "from": "34668574900"
+  },
+  {
+    "ref": "23fc31e4-c029-4aca-9573-c9217dfbcc1e",
+    "answer": "1",
+    "options": {},
+    "from": "34668574900",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
   }
 ]

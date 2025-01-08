@@ -14,3 +14,6 @@ export const MaxIntentosCincoPalabra = 5;
 
 
 
+SHORTCUT / ATAJO DE TECLADO COMENTAR 
+SHIFT + COMANDO + 7
+

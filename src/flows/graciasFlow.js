@@ -1,5 +1,5 @@
 import { addKeyword } from '@builderbot/bot';
-import { menuGeneral } from './menuGeneralFlow.js';
+import { menuGeneral } from './menuPrincipalFlow.js';
 ///////////////////////////////
 //FLUJO PRIMARIO
 const flowGracias = addKeyword(['gracias']).addAnswer(

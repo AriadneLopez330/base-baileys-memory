@@ -2,13 +2,13 @@ import { createBot, createProvider, createFlow } from '@builderbot/bot';
 import { JsonFileDB as Database } from '@builderbot/database-json';
 import { BaileysProvider as Provider } from '@builderbot/provider-baileys';
 import { PORT } from './config.js';
-import { gptFlow } from './flows/gptFlow.js';
-import { menuGeneral } from './flows/menuGeneralFlow.js';
+// import { gptFlow } from './flows/gptFlow.js';
+import { menuPrincipalFlow } from './flows/menuPrincipalFlow.js';
 // import { MongoDB } from '@builderbot/database-mongo'
 // import { MONGO_DB_URI, MONGO_DB_NAME } from './config.js'
 
 const main = async () => {
-  const adapterFlow = createFlow([gptFlow, menuGeneral]);
+  const adapterFlow = createFlow([ menuPrincipalFlow]);
   const adapterProvider = createProvider(Provider);
 
   // BASE DE DATOS JSON
