@@ -1,6 +1,6 @@
 import { addKeyword } from '@builderbot/bot';
 
-const flowresidencia = addKeyword(['3', 'residenica'])
+const flowResidencia = addKeyword(['3', 'residencias'])
   .addAnswer('POLIZA: VG-TEC-183-05')
   .addAnswer(
     'Encargada de Residencias Profesionales del Departamento de Gestión Tecnológica y Vinculación',
@@ -15,4 +15,4 @@ const flowresidencia = addKeyword(['3', 'residenica'])
     '🏢Banco de proyectos para residencias profecionales: https://docs.google.com/spreadsheets/d/1ltEp3P3uMU77sVTjykXy0LUJ9mSae5um/edit?usp=sharing&ouid=113306876051632131679&rtpof=true&sd=true',
   );
 
-export { flowresidencia };
+export { flowResidencia };

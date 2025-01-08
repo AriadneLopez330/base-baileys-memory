@@ -1,6 +1,8 @@
 import { addKeyword, EVENTS } from '@builderbot/bot';
 import { menuSocial } from './serviciosSociales/menuSocial.js';
 // import { flowGracias } from './graciasFlow.js';
+import { visIndus } from './visitasIndustriales/visitasmenu.js';
+import { flowResidencia } from './residencias/residenciaFlow.js';
 
 ///////////////////flujo primario para el departamento de manera general///////////////////////
 const menuPrincipalFlow = addKeyword(EVENTS.WELCOME)
@@ -24,9 +26,9 @@ const menuPrincipalFlow = addKeyword(EVENTS.WELCOME)
         case '1':
           return gotoFlow(menuSocial);
         case '2':
-          return gotoFlow(visitasFlow);
+          return gotoFlow(visIndus);
           case '3':
-            return gotoFlow (residenciaFlow);
+            return gotoFlow (flowResidencia);
         case 'salir':
             return await flowDynamic ('saliendo, ¡bye!');
       }

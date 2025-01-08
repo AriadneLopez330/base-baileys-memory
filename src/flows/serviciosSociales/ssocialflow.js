@@ -1,6 +1,6 @@
 import { addKeyword, EVENTS } from '@builderbot/bot';
 
-import { handleQueue } from '../utils/chatgpt.js';
+import { handleQueue } from '../../utils/chatgpt.js';
 
 const flowContacto = addKeyword([
   'Contacto',

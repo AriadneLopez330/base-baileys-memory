@@ -1,4 +1,5 @@
 import { addKeyword, EVENTS } from '@builderbot/bot';
+import { flowDocs, flowVideo, flowFechas, flowDudas, flowGPT, flowContacto } from './ssocialflow.js';
 
 ////////////////////////////Menu principal de servicio social///////////////////////////////////////
 export const menuSocial = addKeyword(EVENTS.WELCOME)
@@ -25,21 +26,21 @@ export const menuSocial = addKeyword(EVENTS.WELCOME)
           'Por favor elige un número dentro del menú',
         );
       }
-      // switch (ctx.body) {
-      //   case '1':
-      //     return gotoFlow(flowDocs);
-      //   case '2':
-      //     return gotoFlow(flowVideo);
-      //   case '3':
-      //     return gotoFlow(flowFechas);
-      //   case '4':
-      //     return gotoFlow(flowDudas);
-      //   case '5':
-      //     return gotoFlow(flowGPT);
-      //   case '6':
-      //     return gotoFlow(flowContacto);
-      //   case 'salir':
-      //     return await flowDynamic('saliendo, ¡bye!');
-      // }
+      switch (ctx.body) {
+        case '1':
+          return gotoFlow(flowDocs);
+        case '2':
+          return gotoFlow(flowVideo);
+        case '3':
+          return gotoFlow(flowFechas);
+        case '4':
+          return gotoFlow(flowDudas);
+        case '5':
+          return gotoFlow(flowGPT);
+        case '6':
+          return gotoFlow(flowContacto);
+        case 'salir':
+          return await flowDynamic('saliendo, ¡bye!');
+      }
     },
   );

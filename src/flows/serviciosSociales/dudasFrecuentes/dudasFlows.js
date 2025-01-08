@@ -1,6 +1,6 @@
 import { addKeyword } from '@builderbot/bot';
 import { flowMenu } from '../menuSocial.js';
-import { flowCrono } from '../../ssocialflow.js';
+import { flowCrono } from '../ssocialflow.js';
 import { menuDudasFlow } from './menuDudasFlow.js';
 
 //////////////////////////// OPCIONES DE FLUJO DUDAS ///////////////////////////
