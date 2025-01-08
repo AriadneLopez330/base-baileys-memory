@@ -1,5 +1,16 @@
 import { addKeyword } from '@builderbot/bot';
-import { duda1 } from './dudasFlows.js';
+import { 
+  duda1,
+  duda2, 
+  duda3, 
+  duda4, 
+  duda5, 
+  duda6, 
+  duda7, 
+  duda8, 
+  duda9, 
+  duda10 
+} from './dudasFlows.js';
 
 // flujo dudas donde se vacían todas las preguntas más frecuentes del servicio social
 export const flowDudas = addKeyword(['Dudas', 'duda', 'dud'])
@@ -27,29 +38,29 @@ export const flowDudas = addKeyword(['Dudas', 'duda', 'dud'])
           'Por favor elige un número dentro del menú',
         );
       }
-      // switch (ctx.body) {
-      //   case '1':
-      //     return gotoFlow(flow1);
-      //   case '2':
-      //     return gotoFlow(flow2);
-      //   case '3':
-      //     return gotoFlow(flow3);
-      //   case '4':
-      //     return gotoFlow(flow4);
-      //   case '5':
-      //     return gotoFlow(flow5);
-      //   case '6':
-      //     return gotoFlow(flow6);
-      //   case '5':
-      //     return gotoFlow(flow7);
-      //   case '6':
-      //     return gotoFlow(flow8);
-      //   case '5':
-      //     return gotoFlow(flow9);
-      //   case '6':
-      //     return gotoFlow(flow10);
-      //   case 'salir':
-      //     return await flowDynamic('saliendo, ¡bye!');
-      // }
+      switch (ctx.body) {
+      case '1':
+       return gotoFlow(duda1);
+      case '2':
+      return gotoFlow(duda2);
+      case '3':
+       return gotoFlow(duda3);
+      case '4':
+       return gotoFlow(duda4);
+      case '5':
+       return gotoFlow(duda5);
+      case '6':
+       return gotoFlow(duda6);
+      case '7':
+       return gotoFlow(duda7);
+      case '8':
+       return gotoFlow(duda8);
+      case '9':
+       return gotoFlow(duda9);
+      case '10':
+       return gotoFlow(duda10);
+      case 'salir':
+       return await flowDynamic('saliendo, ¡bye!');
+      }
     },
   );

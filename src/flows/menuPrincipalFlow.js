@@ -13,7 +13,7 @@ const menuPrincipalFlow = addKeyword(EVENTS.WELCOME)
       fallback, 
       // flowDynamic 
     }) => {
-      if (!['1', '2', 'salir'].includes(ctx.body)) {
+      if (!['1', '2','3', 'salir'].includes(ctx.body)) {
         //si no es una de  las opciones
         return fallback(
           // retornar al usuario validando solo lo que queremos que introduzca el usuario
@@ -24,9 +24,11 @@ const menuPrincipalFlow = addKeyword(EVENTS.WELCOME)
         case '1':
           return gotoFlow(menuSocial);
         case '2':
-          return gotoFlow(require('./visitas'));
-        // case 'salir':
-        //   return await flowDynamic('saliendo, ¡bye!');
+          return gotoFlow(visitasFlow);
+          case '3':
+            return gotoFlow (residenciaFlow);
+        case 'salir':
+            return await flowDynamic ('saliendo, ¡bye!');
       }
     },
   );

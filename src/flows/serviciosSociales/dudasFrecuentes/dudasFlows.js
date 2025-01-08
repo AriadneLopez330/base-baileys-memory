@@ -19,7 +19,7 @@ const duda1 = addKeyword('1')
     [menuDudasFlow],
   );
 //¿Cuándo inicia el servicio social?
-const flow2 = addKeyword(['2', 'Cuando inicia'])
+const duda2 = addKeyword(['2', 'Cuando inicia'])
   .addAnswer([
     '*El periodo actual es: *',
     'AGOSTO 24 - FEBRERO 25', //🗝️ACTUALIZAR CADA SEMESTRE
@@ -36,7 +36,7 @@ const flow2 = addKeyword(['2', 'Cuando inicia'])
     [flowCrono],
   );
 //'¿Cuánto tiempo dura el servicio social?'
-const flow3 = addKeyword(['3'])
+const duda3 = addKeyword(['3'])
   .addAnswer([
     '*6 MESES Y 1 DÍA*',
     'Cumpliendo como objetivo con 480 Horas',
@@ -48,7 +48,7 @@ const flow3 = addKeyword(['3'])
   ])
   .addAnswer(['\n*1* Para Terminar la consulta'], null, null, [flowMenu]);
 //'No aparece el Servicio Social marcado en AMBAR como materia'
-const flow4 = addKeyword('4')
+const duda4 = addKeyword('4')
   .addAnswer([
     '1.- Debes acudir con tu coordinador para que lo cargue a Ambar como materia', //CAMBIO DE SITEC A AMBAR
     '2.- También puedes realizar una "constancia de estudios con horario escolar" en línea, donde aparezca _Servicio Social_ en curso\n',
@@ -59,7 +59,7 @@ const flow4 = addKeyword('4')
     flowMenu,
   ]);
 //¿Hasta cuándo tengo para subir los documentos?
-const flow5 = addKeyword('5')
+const duda5 = addKeyword('5')
   .addAnswer([
     'CARGA DE DOCUMENTOS',
     '_FASE 1_',
@@ -78,7 +78,7 @@ const flow5 = addKeyword('5')
     flowMenu,
   ]);
 // '¿Dónde puedo realizar mi servicio Social?
-const flow6 = addKeyword('6')
+const duda6 = addKeyword('6')
   .addAnswer([
     '*BANCO DE DEPENDENCIAS*',
     '\nIngresa al Banco de Dependencias',
@@ -89,7 +89,7 @@ const flow6 = addKeyword('6')
     flowMenu,
   ]);
 //Constancia de liberación
-const flow7 = addKeyword('7')
+const duda7 = addKeyword('7')
   .addAnswer([
     'La puedes CONSULTAR en Ambar y DESCARGAR el archivo PDF',
     '_Es indispensable guardar este documento, es requisito para tu titulación_',
@@ -106,7 +106,7 @@ const flow7 = addKeyword('7')
     flowMenu,
   ]);
 //'Me llegó un correo para darme de baja, ¿qué debo de hacer?'
-const flow8 = addKeyword(['8'])
+const duda8 = addKeyword(['8'])
   .addAnswer([
     'Debes de mandar un correo a <serviciosocial@tectijuana.edu.mx> con tus datos:',
     '*Nombre*',
@@ -121,20 +121,7 @@ const flow8 = addKeyword(['8'])
     flowMenu,
   ]);
 
-const flow10 = addKeyword(['10', '¿Dónde puedo obtener mi seguro facultativo?'])
-  .addAnswer([
-    'Si ya cuentas con seguro social por parte de padres o trabajo, no es necesario renunciar a esta, es válido, solo subir constancia de vigencia',
-    'Solicitar la constancia del seguro social para entrar a la plataforma del IMMS',
-    '👉https://goo.su/bS44Mj👈',
-    'En caso de vigencia: BAJA',
-    'Solicitar en servicios escolares, dada de ALTA en IMSS por la institución',
-    'Llenar Formulario de 24h a 72h de respuesta',
-    '👉👈', //🗝️ACTUALIZAR CADA SEMESTRE--------------------------------------------
-  ])
-  .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenu,
-  ]);
-const flow9 = addKeyword([
+const duda9 = addKeyword([
   '9',
   'Ya subí documentos iniciales, pero no puedo subir la primera fase',
 ])
@@ -147,7 +134,7 @@ const flow9 = addKeyword([
     flowMenu,
   ]);
 
-  const flow10 = addKeyword(['10', '¿Dónde puedo obtener mi seguro facultativo?'])
+  const duda10 = addKeyword(['10', '¿Dónde puedo obtener mi seguro facultativo?'])
   .addAnswer([
     'Si ya cuentas con seguro social por parte de padres o trabajo, no es necesario renunciar a esta, es válido, solo subir constancia de vigencia',
     'Solicitar la constancia del seguro social para entrar a la plataforma del IMMS',
@@ -168,7 +155,7 @@ const questionBackFlow = addKeyword([])
   ], {capture: true},
   async (ctx, {gotoFlow, fallback, flowDynamic}) => {
     if (ctx.body === '1') {
-      return gotoFlow(flowDudas)
+      return gotoFlow(dudasFlow)
     }
   }
 )
@@ -178,13 +165,13 @@ const questionBackFlow = addKeyword([])
 
 export {
   duda1,
-  flow2,
-  flow3,
-  flow4,
-  flow5,
-  flow6,
-  flow7,
-  flow8,
-  flow9,
-  flow10,
+  duda2,
+  duda3,
+  duda4,
+  duda5,
+  duda6,
+  duda7,
+  duda8,
+  duda9,
+  duda10,
 };
