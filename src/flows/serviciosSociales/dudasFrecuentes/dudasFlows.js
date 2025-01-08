@@ -2,6 +2,16 @@ import { addKeyword } from '@builderbot/bot';
 import { flowCrono } from '../ssocialflow.js';
 import { flowMenuDudas } from './menuDudasFlow.js';
 
+const questionBackFlow = addKeyword([]).addAnswer(
+  ['Quieres volver... '],
+  { capture: true },
+  async (ctx, { gotoFlow }) => {
+    if (ctx.body === '1') {
+      return gotoFlow(flowMenuDudas);
+    }
+  },
+);
+
 //////////////////////////// OPCIONES DE FLUJO DUDAS ///////////////////////////
 const duda1 = addKeyword('1')
   .addAnswer([
@@ -11,8 +21,8 @@ const duda1 = addKeyword('1')
     '👉https://sitec.tijuana.tecnm.mx/servicio_social/index.php👈',
     '*Ingresa tu matrícula* y pulsa _Curso de inducción_',
   ])
-  .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenuDudas,
+  .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, [
+    questionBackFlow,
   ]);
 //¿Cuándo inicia el servicio social?
 const duda2 = addKeyword(['2', 'Cuando inicia'])
@@ -22,12 +32,11 @@ const duda2 = addKeyword(['2', 'Cuando inicia'])
     '\n*La fecha de inscripción*',
     '5 de agosto al 19 de agosto del 2024', //🗝️ACTUALIZAR CADA SEMESTRE
   ])
-  .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenuDudas,
+  .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, [
+    questionBackFlow,
   ])
   .addAnswer(
     ['*Cronograma* para consultar "Fechas Importantes de Servicio Social"'],
-    null,
     null,
     [flowCrono],
   );
@@ -42,7 +51,7 @@ const duda3 = addKeyword(['3'])
     '*Ejemplo*',
     '*Fecha inicial:* _Lunes 05 de Agosto 2024_ *Terminación:* _Jueves 06 de Febrero 2025_', //🗝️ACTUALIZAR CADA SEMESTRE
   ])
-  .addAnswer(['\n*1* Para Terminar la consulta'], null, null, [flowMenuDudas]);
+  .addAnswer(['\n*1* Para Terminar la consulta'], null, [questionBackFlow]);
 //'No aparece el Servicio Social marcado en AMBAR como materia'
 const duda4 = addKeyword('4')
   .addAnswer([
@@ -51,8 +60,8 @@ const duda4 = addKeyword('4')
     '_Caso especial y casos comité_',
     '3.- Es importante guardar el comprobante de pago del semestre en curso, y anexarlo en un mismo documento al subir tu kardex a la plataforma, solo en caso de ser necesario',
   ])
-  .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenuDudas,
+  .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, [
+    questionBackFlow,
   ]);
 //¿Hasta cuándo tengo para subir los documentos?
 const duda5 = addKeyword('5')
@@ -67,11 +76,10 @@ const duda5 = addKeyword('5')
   .addAnswer(
     ['*Cronograma* para consultar fechas importantes de Servicio Social'],
     null,
-    null,
     [flowCrono],
   )
   .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenuDudas,
+    questionBackFlow,
   ]);
 // '¿Dónde puedo realizar mi servicio Social?
 const duda6 = addKeyword('6')
@@ -82,7 +90,7 @@ const duda6 = addKeyword('6')
     'https://goo.su/czvxuq', //🗝️ACTUALIZAR CADA SEMESTRE
   ])
   .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenuDudas,
+    questionBackFlow,
   ]);
 //Constancia de liberación
 const duda7 = addKeyword('7')
@@ -99,7 +107,7 @@ const duda7 = addKeyword('7')
     '*Unidad (Tomas aquino u Otay)*',
   ])
   .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenuDudas,
+    questionBackFlow,
   ]);
 //'Me llegó un correo para darme de baja, ¿qué debo de hacer?'
 const duda8 = addKeyword(['8'])
@@ -114,7 +122,7 @@ const duda8 = addKeyword(['8'])
     '*Unidad Perteneciente* (Tomas Aquino u Otay)',
   ])
   .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenuDudas,
+    questionBackFlow,
   ]);
 
 const duda9 = addKeyword([
@@ -126,8 +134,8 @@ const duda9 = addKeyword([
     'Si ya mandaste correo electrónico debes esperar de 1 a 3 días hábiles para recibir respuesta',
     'Si ya pasó más tiempo, puedes volver a mandar correo reafirmando que ya subiste tus documentos, es fundamental darle seguimiento a tu expediente vía correo electrónico.',
   ])
-  .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenuDudas,
+  .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, [
+    questionBackFlow,
   ]);
 
 const duda10 = addKeyword(['10', '¿Dónde puedo obtener mi seguro facultativo?'])
@@ -140,19 +148,24 @@ const duda10 = addKeyword(['10', '¿Dónde puedo obtener mi seguro facultativo?'
     'Llenar Formulario de 24h a 72h de respuesta',
     '👉👈', //🗝️ACTUALIZAR CADA SEMESTRE--------------------------------------------
   ])
-  .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
-    flowMenuDudas,
-  ]);
-
-const questionBackFlow = addKeyword([]).addAnswer(
-  ['Quieres volver... '],
-  { capture: true },
-  async (ctx, { gotoFlow, fallback, flowDynamic }) => {
-    if (ctx.body === '1') {
-      return gotoFlow(flowMenuDudas);
+  .addAnswer(
+    ['\n*1* o *Menú* Para Terminar la consulta'],
+    null, 
+    [questionBackFlow]
+  )
+  .addAnswer(
+    ['Quieres volver... '],
+    { capture: true },
+    async (ctx, { gotoFlow }) => {
+      if (ctx.body === '1') {
+        return gotoFlow(flowMenuDudas);
+      }
     }
-  },
-);
+  );
+
+
+
+
 
 export {
   duda1,

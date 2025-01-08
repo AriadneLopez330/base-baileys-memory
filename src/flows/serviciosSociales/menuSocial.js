@@ -25,7 +25,7 @@ export const menuSocial = addKeyword(EVENTS.WELCOME)
       '👩‍💻 *6* CONTACTO Unidad Tomas Aquino y OTAY ',
     ],
     { capture: true },
-    async (ctx, { fallback }) => {
+    async (ctx, { fallback, gotoFlow, flowDynamic }) => {
       if (!['1', '2', '3', '4', '5', '6', 'salir'].includes(ctx.body)) {
         //si no es una de  las opciones
         return fallback(

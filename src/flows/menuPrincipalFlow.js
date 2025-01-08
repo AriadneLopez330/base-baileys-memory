@@ -15,7 +15,7 @@ const menuPrincipalFlow = addKeyword(EVENTS.WELCOME)
       {
         gotoFlow,
         fallback,
-        // flowDynamic
+        flowDynamic
       },
     ) => {
       if (!['1', '2', '3', 'salir'].includes(ctx.body)) {
