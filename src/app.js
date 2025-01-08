@@ -8,7 +8,7 @@ import { menuPrincipalFlow } from './flows/menuPrincipalFlow.js';
 // import { MONGO_DB_URI, MONGO_DB_NAME } from './config.js'
 
 const main = async () => {
-  const adapterFlow = createFlow([ menuPrincipalFlow]);
+  const adapterFlow = createFlow([menuPrincipalFlow]);
   const adapterProvider = createProvider(Provider);
 
   // BASE DE DATOS JSON

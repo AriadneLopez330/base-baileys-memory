@@ -1,10 +1,10 @@
 import { addKeyword } from '@builderbot/bot';
-import { 
-    visitasseguro, 
-    visitascontacto, 
-    visitasdoc, 
-    visitasTrans, 
-    visitfechas 
+import {
+  visitasseguro,
+  visitascontacto,
+  visitasdoc,
+  visitasTrans,
+  visitfechas,
 } from './visitasflow.js';
 
 const visIndus = addKeyword(['visitas industriales', 'visitas', 'Visitas'])
@@ -43,4 +43,4 @@ const visIndus = addKeyword(['visitas industriales', 'visitas', 'Visitas'])
     },
   );
 
-  export {visIndus}
+export { visIndus };

@@ -46,7 +46,6 @@ const flowCrono = addKeyword([
     'https://www.tijuana.tecnm.mx/wp-content/uploads/2024/08/Cronograma-de-Actividades-del-servicio-social-ago-dic24-1.png',
 });
 
-
 //FLUJO HIJO documentación del servicio social
 
 const flowDocs = addKeyword([EVENTS.ACTION])
@@ -119,4 +118,4 @@ const flowGPT = addKeyword(['documentos servicio social', 'preguntas', '5'])
     },
   );
 
-export {flowCrono, flowDocs, flowVideo, flowFechas, flowGPT, flowContactoSS };
+export { flowCrono, flowDocs, flowVideo, flowFechas, flowGPT, flowContactoSS };

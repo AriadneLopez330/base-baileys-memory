@@ -10,12 +10,15 @@ const menuPrincipalFlow = addKeyword(EVENTS.WELCOME)
   .addAnswer(
     ['1. Servicio Social', '2. Visitas Industiales', '3. Residencias (Poliza)'],
     { capture: true },
-    async (ctx, { 
-      gotoFlow, 
-      fallback, 
-      // flowDynamic 
-    }) => {
-      if (!['1', '2','3', 'salir'].includes(ctx.body)) {
+    async (
+      ctx,
+      {
+        gotoFlow,
+        fallback,
+        // flowDynamic
+      },
+    ) => {
+      if (!['1', '2', '3', 'salir'].includes(ctx.body)) {
         //si no es una de  las opciones
         return fallback(
           // retornar al usuario validando solo lo que queremos que introduzca el usuario
@@ -27,10 +30,10 @@ const menuPrincipalFlow = addKeyword(EVENTS.WELCOME)
           return gotoFlow(menuSocial);
         case '2':
           return gotoFlow(visIndus);
-          case '3':
-            return gotoFlow (flowResidencia);
+        case '3':
+          return gotoFlow(flowResidencia);
         case 'salir':
-            return await flowDynamic ('saliendo, ¡bye!');
+          return await flowDynamic('saliendo, ¡bye!');
       }
     },
   );

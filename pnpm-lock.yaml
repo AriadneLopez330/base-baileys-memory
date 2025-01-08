@@ -12,16 +12,16 @@ importers:
         specifier: ^0.0.2
         version: 0.0.2
       '@builderbot/bot':
-        specifier: 1.2.4
+        specifier: ^1.0.0
         version: 1.2.4
       '@builderbot/database-json':
-        specifier: 1.2.4
+        specifier: ^1.0.0
         version: 1.2.4
       '@builderbot/database-mongo':
         specifier: ^1.2.4
         version: 1.2.4(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))
       '@builderbot/provider-baileys':
-        specifier: 1.2.4
+        specifier: ^1.0.0
         version: 1.2.4
       dotenv:
         specifier: ^16.4.7

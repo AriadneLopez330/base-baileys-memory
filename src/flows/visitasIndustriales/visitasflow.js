@@ -77,14 +77,21 @@ const visitasseguro = addKeyword('4')
     '*Si el alumno no cuenta con seguro, no podrá asistir a la visita*',
   ]);
 const visitascontacto = addKeyword('6')
-.addAnswer('Encarada de visitas industriales')
-.addAnswer('M.A. Marisol Chávez De Landa')
-.addAnswer('Correo: marisol.chavez@tectijuana.edu.mx')
-.addAnswer('Teléfono: (664) 607-84-00. ext. 143')
+  .addAnswer('Encarada de visitas industriales')
+  .addAnswer('M.A. Marisol Chávez De Landa')
+  .addAnswer('Correo: marisol.chavez@tectijuana.edu.mx')
+  .addAnswer('Teléfono: (664) 607-84-00. ext. 143')
   .addAnswer([
     'Para contactar al área de visitas industriales, por favor envía un correo electrónico a:',
     'visitasindustriales@tectijuana.edu.mx',
   ]);
-const flowsalir = addKeyword('7').addAnswer ('Regresar a menu de visitas industriales')
-.addAnswer()
-export { visitasseguro, visitascontacto, visitasdoc, visitasTrans, visitfechas };
+const flowsalir = addKeyword('7')
+  .addAnswer('Regresar a menu de visitas industriales')
+  .addAnswer();
+export {
+  visitasseguro,
+  visitascontacto,
+  visitasdoc,
+  visitasTrans,
+  visitfechas,
+};

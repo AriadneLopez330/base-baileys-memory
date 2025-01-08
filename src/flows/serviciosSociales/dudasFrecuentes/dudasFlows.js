@@ -11,12 +11,9 @@ const duda1 = addKeyword('1')
     '👉https://sitec.tijuana.tecnm.mx/servicio_social/index.php👈',
     '*Ingresa tu matrícula* y pulsa _Curso de inducción_',
   ])
-  .addAnswer(
-    ['\n*1* o *Menú* Para Terminar la consulta'], // el cierre de objeto debe de ser antes de null, para que no se muestre 'menú [objeto]', en el despliegue del mensaje
-    null,
-    null,
-    [flowMenuDudas],
-  );
+  .addAnswer(['\n*1* o *Menú* Para Terminar la consulta'], null, null, [
+    flowMenuDudas,
+  ]);
 //¿Cuándo inicia el servicio social?
 const duda2 = addKeyword(['2', 'Cuando inicia'])
   .addAnswer([
@@ -133,7 +130,7 @@ const duda9 = addKeyword([
     flowMenuDudas,
   ]);
 
-  const duda10 = addKeyword(['10', '¿Dónde puedo obtener mi seguro facultativo?'])
+const duda10 = addKeyword(['10', '¿Dónde puedo obtener mi seguro facultativo?'])
   .addAnswer([
     'Si ya cuentas con seguro social por parte de padres o trabajo, no es necesario renunciar a esta, es válido, solo subir constancia de vigencia',
     'Solicitar la constancia del seguro social para entrar a la plataforma del IMMS',
@@ -147,16 +144,15 @@ const duda9 = addKeyword([
     flowMenuDudas,
   ]);
 
-
-const questionBackFlow = addKeyword([])
-  .addAnswer([
-    'Quieres volver... ',
-  ], {capture: true},
-  async (ctx, {gotoFlow, fallback, flowDynamic}) => {
+const questionBackFlow = addKeyword([]).addAnswer(
+  ['Quieres volver... '],
+  { capture: true },
+  async (ctx, { gotoFlow, fallback, flowDynamic }) => {
     if (ctx.body === '1') {
-      return gotoFlow(flowMenuDudas)
+      return gotoFlow(flowMenuDudas);
     }
-  })
+  },
+);
 
 export {
   duda1,

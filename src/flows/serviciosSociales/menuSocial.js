@@ -1,5 +1,11 @@
 import { addKeyword, EVENTS } from '@builderbot/bot';
-import { flowDocs, flowVideo, flowFechas, flowGPT, flowContactoSS } from './ssocialflow.js';
+import {
+  flowDocs,
+  flowVideo,
+  flowFechas,
+  flowGPT,
+  flowContactoSS,
+} from './ssocialflow.js';
 import { flowMenuDudas } from './dudasFrecuentes/menuDudasFlow.js';
 
 ////////////////////////////Menu principal de servicio social///////////////////////////////////////
@@ -19,7 +25,7 @@ export const menuSocial = addKeyword(EVENTS.WELCOME)
       '👩‍💻 *6* CONTACTO Unidad Tomas Aquino y OTAY ',
     ],
     { capture: true },
-    async (ctx, { fallback,  }) => {
+    async (ctx, { fallback }) => {
       if (!['1', '2', '3', '4', '5', '6', 'salir'].includes(ctx.body)) {
         //si no es una de  las opciones
         return fallback(
