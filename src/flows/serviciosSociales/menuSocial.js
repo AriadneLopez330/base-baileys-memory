@@ -7,6 +7,15 @@ import {
   flowContactoSS,
 } from './ssocialflow.js';
 import { flowMenuDudas } from './dudasFrecuentes/menuDudasFlow.js';
+// O Opción 2: Importar todo como un objeto
+//import * as flows from './ssocialflow.js';
+
+// Verificar que los flujos se importaron correctamente
+console.log('flowDocs:', flowDocs);
+console.log('flowVideo:', flowVideo);
+console.log('flowFechas:', flowFechas);
+console.log('flowGPT:', flowGPT);
+console.log('flowContactoSS:', flowContactoSS);
 
 ////////////////////////////Menu principal de servicio social///////////////////////////////////////
 export const menuSocial = addKeyword(EVENTS.WELCOME)
@@ -23,31 +32,64 @@ export const menuSocial = addKeyword(EVENTS.WELCOME)
       '🤔 *4* Dudas Frecuentes de los alumnos',
       '📂 *5* Consulta respecto a documentos de servicio social',
       '👩‍💻 *6* CONTACTO Unidad Tomas Aquino y OTAY ',
-    ],
-    { capture: true },
-    async (ctx, { fallback, gotoFlow, flowDynamic }) => {
-      if (!['1', '2', '3', '4', '5', '6', 'salir'].includes(ctx.body)) {
-        //si no es una de  las opciones
-        return fallback(
-          // retornar al usuario validando solo lo que queremos que introduzca el usuario
-          'Por favor elige un número dentro del menú',
-        );
-      }
-      switch (ctx.body) {
-        case '1':
+    ])
+    .addAnswer(
+      'Por favor, escribe el número de tu opción (1-6):',
+      { capture: true },
+      (ctx, { fallback, flowDynamic, gotoFlow }) => {
+        const opcion = ctx.body.trim();
+        
+        if (opcion === '1') {
+          flowDynamic('Accediendo a documentación...');
           return gotoFlow(flowDocs);
-        case '2':
+        }
+        if (opcion === '2') {
+          flowDynamic('Accediendo a video...');
           return gotoFlow(flowVideo);
-        case '3':
+        }
+        if (opcion === '3') {
+          flowDynamic('Accediendo a fechas...');
           return gotoFlow(flowFechas);
-        case '4':
+        }
+        if (opcion === '4') {
+          flowDynamic('Accediendo a dudas frecuentes...');
           return gotoFlow(flowMenuDudas);
-        case '5':
+        }
+        if (opcion === '5') {
+          flowDynamic('Accediendo a consulta de documentos...');
           return gotoFlow(flowGPT);
-        case '6':
+        }
+        if (opcion === '6') {
+          flowDynamic('Accediendo a contacto...');
           return gotoFlow(flowContactoSS);
-        case 'salir':
-          return await flowDynamic('saliendo, ¡bye!');
+        }
+        
+        return fallback('Por favor, selecciona una opción válida (1-6)');
       }
-    },
-  );
+    );
+
+    //////////////////////////////////
+    // .addAnswer(
+    //   'Por favor, selecciona una opción (1-6):',
+    //   { capture: true },
+    //   async (ctx, { fallback, gotoFlow }) => {
+    //     const opcion = ctx.body.trim();
+        
+    //     switch(opcion) {
+    //       case '1':
+    //         return gotoFlow(flowDocs);
+    //       case '2':
+    //         return gotoFlow(flowVideo);
+    //       case '3':
+    //         return gotoFlow(flowFechas);
+    //       case '4':
+    //         return gotoFlow(flowMenuDudas);
+    //       case '5':
+    //         return gotoFlow(flowGPT);
+    //       case '6':
+    //         return gotoFlow(flowContactoSS);
+    //       default:
+    //         return fallback();
+    //     }
+    //   }
+    // );

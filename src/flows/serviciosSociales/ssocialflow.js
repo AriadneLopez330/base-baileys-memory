@@ -9,6 +9,7 @@ const flowContactoSS = addKeyword([
   'ana',
   'nayeli',
   'otay',
+  '6',
 ]).addAnswer([
   '--------UNIDAD TOMAS AQUINO-----------\n',
   '*Nayeli Irene Fernández González*', //🗝️ACTUALIZAR EN CAMBIO ADMINISTRATIVO
@@ -21,7 +22,7 @@ const flowContactoSS = addKeyword([
   'Teléfono: (664) 607-84-00 Ext. 204', //🗝️ACTUALIZAR EN CAMBIO ADMINISTRATIVO
   '<serviciosocialotay@tectijuana.edu.mx>',
 ]);
-export const flowMenu = addKeyword(['1', 'Menu', 'menú'])
+export const flowMenu = addKeyword(['Menu', 'menú'])
   .addAnswer(['¡Hasta la próxima, Galgo!', '*Menú* si tienes mas consultas'])
   .addAnswer(
     { capture: true, buttons: [{ body: 'Ir a Menú' }] },
@@ -48,7 +49,7 @@ const flowCrono = addKeyword([
 
 //FLUJO HIJO documentación del servicio social
 
-const flowDocs = addKeyword([EVENTS.ACTION])
+const flowDocs = addKeyword('1')
   .addAnswer([
     '📄 Apartado de Servicio Social',
     'https://www.tijuana.tecnm.mx/servicio-social/',
@@ -69,7 +70,7 @@ const flowDocs = addKeyword([EVENTS.ACTION])
 
 ///////////////////////FLUJO VIDEO DE SERVICIO SOCIAL/////////////////////////////////////
 
-const flowVideo = addKeyword('video', 'Vido', 'vidio', 'vidrio')
+const flowVideo = addKeyword('video', 'Vido', 'vidio', '2')
   .addAnswer([
     'Si tienes dudas respecto al servicio social, consulta el video de inducción\n',
     'Donde explicamos cuestionamientos generales que los alumnos suelen tener',
@@ -81,7 +82,7 @@ const flowVideo = addKeyword('video', 'Vido', 'vidio', 'vidrio')
   .addAnswer(['\n*1* Para Terminar la consulta'], null, null, [flowMenu]);
 
 //FLUJO HIJO
-const flowFechas = addKeyword(['fechas', 'fecha', 'tiempo'])
+const flowFechas = addKeyword(['fechas', 'fecha', 'tiempo', '3'])
   .addAnswer([
     '*Fechas importantes para el Servicio Social*\n',
     'REGISTRO AL SERVICIO SOCIAL',
