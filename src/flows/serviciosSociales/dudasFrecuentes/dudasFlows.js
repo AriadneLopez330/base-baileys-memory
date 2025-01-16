@@ -1,6 +1,6 @@
 import { addKeyword } from '@builderbot/bot';
 import { flowCrono } from '../ssocialflow.js';
-import { flowMenuDudas } from './menuDudasFlow.js';
+import { flowMenuDudas } from '../menuDudasFlow.js';
 
 const questionBackFlow = addKeyword([]).addAnswer(
   ['Quieres volver... '],

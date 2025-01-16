@@ -1,15 +1,15 @@
 [
   {
-    "ref": "bef9bc17-1e88-4273-820e-1836d08a4bfd",
-    "answer": "H",
+    "ref": "58279ac3-486b-4fa1-939b-dde9007a1b57",
+    "answer": "1",
     "options": {},
     "from": "5216642673466",
-    "refSerialize": "ff1074a08d544026a56e516f49298f06"
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
   },
   {
-    "ref": "ans_e15d8400-15e3-4342-a08b-dc044d144717",
-    "keyword": "key_44218a66-8aa0-4a8a-abf0-ce36d69006db",
-    "answer": "Bienvenido! Menu departamento",
+    "ref": "ans_2ed61ea1-09b9-4453-8609-09411b9a55d5",
+    "keyword": "key_7c2a9f79-0008-4ebd-8ed1-1898f5faca03",
+    "answer": "*¡Bienvenido al Departamento de Gestión Tecnológica y Vinculación!* 👋\n\nSelecciona el servicio que necesitas:\n\n1️⃣ *Servicio Social*\n2️⃣ *Galgo Asistente servicio social*\n3️⃣ *Visitas Industriales*\n4️⃣ *Residencias Profesionales*",
     "options": {
       "buttons": [],
       "capture": false,
@@ -18,13 +18,13 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "27fa7b1d7f0509bf456b04696ed613db",
+    "refSerialize": "29e39c1fbc064decc06e5b2384cb2838",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_d0a8573b-9b63-4ea4-b69f-048030f1b908",
-    "keyword": "ans_e15d8400-15e3-4342-a08b-dc044d144717",
-    "answer": "1. Servicio Social\n2. Visitas Industiales\n3. Residencias (Poliza)",
+    "ref": "ans_b093a6a6-02d7-4020-962b-2596b4928d25",
+    "keyword": "ans_2ed61ea1-09b9-4453-8609-09411b9a55d5",
+    "answer": "Por favor, escribe el número de tu opción:",
     "options": {
       "buttons": [],
       "capture": false,
@@ -33,12 +33,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "82a853555956336262ae20245fbba24b",
+    "refSerialize": "03a8f54b4855c28a48fda20716e4ccd0",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_8a6a6e07-47f6-44e5-a8b0-c32c1a81f9b7",
-    "keyword": "ans_d0a8573b-9b63-4ea4-b69f-048030f1b908",
+    "ref": "ans_5a531454-8055-4b6b-a3af-0e5940aa2048",
+    "keyword": "ans_b093a6a6-02d7-4020-962b-2596b4928d25",
     "answer": "__capture_only_intended__",
     "options": {
       "buttons": [],
@@ -48,20 +48,20 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "4c12ad5d7d49d235e8ba24d7d46f6f32",
+    "refSerialize": "a959b1a2170eac3a032882477e822a29",
     "from": "5216642673466"
   },
   {
-    "ref": "6fa000b0-0a92-431d-8028-7b736a93b9e6",
-    "keyword": "4c12ad5d7d49d235e8ba24d7d46f6f32",
+    "ref": "08fa674f-d35c-48d7-b751-553f98241fbf",
+    "keyword": "a959b1a2170eac3a032882477e822a29",
     "answer": "1",
     "options": {},
     "from": "5216642673466",
     "refSerialize": "290236b1d481a790a200ea6e94b2122a"
   },
   {
-    "ref": "ans_5c836a89-c320-4076-a5a1-0eb72faa78ac",
-    "keyword": "key_dea0c94e-aafa-4e43-a8a9-d66d28fbfb37",
+    "ref": "ans_933e8982-2f12-4f5c-a670-e699aeb71f4c",
+    "keyword": "key_8f67d725-3c36-46f4-89d4-4bd43e87fac3",
     "answer": "¿Como puedo ayudarte?😁",
     "options": {
       "buttons": [],
@@ -71,11 +71,12 @@
       "keyword": {},
       "callback": false
     },
+    "refSerialize": "425792fb2aa897acedac76c518493a03",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_22bd8410-bf34-44b8-b5ca-b1e602ae8842",
-    "keyword": "ans_5c836a89-c320-4076-a5a1-0eb72faa78ac",
+    "ref": "ans_0758c362-7ab9-4098-812f-de09a131a1fc",
+    "keyword": "ans_933e8982-2f12-4f5c-a670-e699aeb71f4c",
     "answer": "Te comparto los siguientes links de interés sobre el proceso\n\n                             *SERVICIO SOCIAL*\n_Departamento De Gestión Tecnológica Y Vinculación_\n\n🧾 *1* Para ver la documentación\n🎬 *2* Para Dudas Generales (Video)\n👉 *3* Fechas Importantes del Servicio Social\n🤔 *4* Dudas Frecuentes de los alumnos\n📂 *5* Consulta respecto a documentos de servicio social\n👩‍💻 *6* CONTACTO Unidad Tomas Aquino y OTAY ",
     "options": {
       "buttons": [],
@@ -85,11 +86,12 @@
       "keyword": {},
       "callback": false
     },
+    "refSerialize": "b7e0897458022e9eaf1d78f81a125119",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_e6c1e2db-75d2-47b9-abb0-61819726a6c2",
-    "keyword": "ans_22bd8410-bf34-44b8-b5ca-b1e602ae8842",
+    "ref": "ans_99865f9b-4133-43f1-b5a4-1c29538a6ab9",
+    "keyword": "ans_0758c362-7ab9-4098-812f-de09a131a1fc",
     "answer": "__call_action__",
     "options": {
       "buttons": [],
@@ -99,12 +101,13 @@
       "keyword": {},
       "callback": true
     },
+    "refSerialize": "b08ad0c85ab23d8d714e4ca08fb4e330",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_e8bc1ac5-de54-42db-85c9-33aa78e997cd",
-    "keyword": "ans_e6c1e2db-75d2-47b9-abb0-61819726a6c2",
-    "answer": "Por favor, escribe el número de tu opción (1-6):",
+    "ref": "ans_5bdcfb66-33ef-4fbb-903b-67a37c28df76",
+    "keyword": "ans_99865f9b-4133-43f1-b5a4-1c29538a6ab9",
+    "answer": "Por favor, escribe el número de tu opción que deseas consultar:",
     "options": {
       "buttons": [],
       "capture": false,
@@ -113,11 +116,12 @@
       "keyword": {},
       "callback": false
     },
+    "refSerialize": "f1d7fdfbd44bc44e9082f1137e175361",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_a3c2672b-f3b2-4a1d-a890-a27bd6a369e6",
-    "keyword": "ans_e8bc1ac5-de54-42db-85c9-33aa78e997cd",
+    "ref": "ans_346b5d92-2b57-462a-ba7c-9db1ce494941",
+    "keyword": "ans_5bdcfb66-33ef-4fbb-903b-67a37c28df76",
     "answer": "__capture_only_intended__",
     "options": {
       "buttons": [],
@@ -127,20 +131,84 @@
       "keyword": {},
       "callback": true
     },
+    "refSerialize": "706cf9190683730175d47802db1b9cad",
     "from": "5216642673466"
   },
   {
-    "ref": "d18bca5b-aac0-4190-b1f0-478a53a1ffb3",
-    "answer": "1",
+    "ref": "92abc71b-d99d-498f-8cce-8b7026888d6d",
+    "keyword": "706cf9190683730175d47802db1b9cad",
+    "answer": "3",
     "options": {},
     "from": "5216642673466",
-    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+    "refSerialize": "7af65864494b12f0f7ef00589f4d3979"
   },
   {
-    "ref": "23304d88-ce72-42bc-a3c8-f9d6866b5945",
-    "answer": "1",
-    "options": {},
+    "ref": "f4d0a9ab-3306-4adf-9e77-e8054123c24a",
+    "keyword": null,
+    "answer": "*FECHAS IMPORTANTES*",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
     "from": "5216642673466",
-    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+    "refSerialize": "bd934fe786120f49e069f2b00d16c060"
+  },
+  {
+    "ref": "c6954a00-ae0b-49e0-b85b-ac64371275d4",
+    "keyword": null,
+    "answer": "Inscripción: del 5 de agosto al 19 de agosto del 2024",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5216642673466",
+    "refSerialize": "0cd54227120aacbc48dfbb67fe07be90"
+  },
+  {
+    "ref": "1274e29b-18f8-4992-a294-6f4b34c2f58f",
+    "keyword": null,
+    "answer": "Periodo: Septiembre - Diciembre 2024",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5216642673466",
+    "refSerialize": "f2fdbc6a57749a99be325f35a2d1ab0f"
+  },
+  {
+    "ref": "ans_a33ccb37-36d8-48a7-8054-9c70946cbf70",
+    "keyword": "ans_346b5d92-2b57-462a-ba7c-9db1ce494941",
+    "answer": "⭕ Por favor, escribe el número de tu opción que deseas consultar:\n🟢 Escribe un número (1-10)\n🔴 \"menu\" para volver al menú dudas frecuentes\n🟡 \"salir\" para volver al menú principal",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "dedd0c2456853d56796979d6cf232b06",
+    "from": "5216642673466"
+  },
+  {
+    "ref": "ans_7d7ab881-9aec-4196-ad39-44a90e9f19b7",
+    "keyword": "ans_a33ccb37-36d8-48a7-8054-9c70946cbf70",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9de43b5d404ad30586f7cac1bf2e313f",
+    "from": "5216642673466"
   }
 ]
