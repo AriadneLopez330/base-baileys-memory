@@ -1,14 +1,15 @@
 [
   {
-    "ref": "58279ac3-486b-4fa1-939b-dde9007a1b57",
-    "answer": "1",
+    "ref": "b74128c9-62b5-4889-bc0e-b36d22f4000f",
+    "keyword": "a2cca0ed61e3f559db82e10e7123e4bd",
+    "answer": "l",
     "options": {},
     "from": "5216642673466",
-    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+    "refSerialize": "7d3a8630e41ea7d404b8a0b3b2e95013"
   },
   {
-    "ref": "ans_2ed61ea1-09b9-4453-8609-09411b9a55d5",
-    "keyword": "key_7c2a9f79-0008-4ebd-8ed1-1898f5faca03",
+    "ref": "ans_b7759c4d-ce1e-4a78-ac26-a99a6ff4a0d1",
+    "keyword": "key_62b0bba5-4320-426e-9251-c5762ba49c6d",
     "answer": "*¡Bienvenido al Departamento de Gestión Tecnológica y Vinculación!* 👋\n\nSelecciona el servicio que necesitas:\n\n1️⃣ *Servicio Social*\n2️⃣ *Galgo Asistente servicio social*\n3️⃣ *Visitas Industriales*\n4️⃣ *Residencias Profesionales*",
     "options": {
       "buttons": [],
@@ -18,12 +19,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "29e39c1fbc064decc06e5b2384cb2838",
+    "refSerialize": "47eb3dc79793dcf33396e726c83e530f",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_b093a6a6-02d7-4020-962b-2596b4928d25",
-    "keyword": "ans_2ed61ea1-09b9-4453-8609-09411b9a55d5",
+    "ref": "ans_55ca0589-5380-4d1d-955e-45874acb082e",
+    "keyword": "ans_b7759c4d-ce1e-4a78-ac26-a99a6ff4a0d1",
     "answer": "Por favor, escribe el número de tu opción:",
     "options": {
       "buttons": [],
@@ -33,12 +34,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "03a8f54b4855c28a48fda20716e4ccd0",
+    "refSerialize": "8ac95b60a97fa5e1c6c00377621672e9",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_5a531454-8055-4b6b-a3af-0e5940aa2048",
-    "keyword": "ans_b093a6a6-02d7-4020-962b-2596b4928d25",
+    "ref": "ans_40477c91-bdb8-49a7-a620-5d2dfd01a762",
+    "keyword": "ans_55ca0589-5380-4d1d-955e-45874acb082e",
     "answer": "__capture_only_intended__",
     "options": {
       "buttons": [],
@@ -48,20 +49,20 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "a959b1a2170eac3a032882477e822a29",
+    "refSerialize": "5ea45f309fd2edb973ea3a6645446937",
     "from": "5216642673466"
   },
   {
-    "ref": "08fa674f-d35c-48d7-b751-553f98241fbf",
-    "keyword": "a959b1a2170eac3a032882477e822a29",
+    "ref": "8e4ac7c9-2096-4e84-b7d7-10aa734030b2",
+    "keyword": "5ea45f309fd2edb973ea3a6645446937",
     "answer": "1",
     "options": {},
     "from": "5216642673466",
     "refSerialize": "290236b1d481a790a200ea6e94b2122a"
   },
   {
-    "ref": "ans_933e8982-2f12-4f5c-a670-e699aeb71f4c",
-    "keyword": "key_8f67d725-3c36-46f4-89d4-4bd43e87fac3",
+    "ref": "ans_fd4f3a69-c5ec-47b7-883a-5645804ef763",
+    "keyword": "key_f6ca023b-fcd7-4d03-b3fd-2b641816893a",
     "answer": "¿Como puedo ayudarte?😁",
     "options": {
       "buttons": [],
@@ -71,12 +72,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "425792fb2aa897acedac76c518493a03",
+    "refSerialize": "23320e8a55fba97e6728068bc4da2aa9",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_0758c362-7ab9-4098-812f-de09a131a1fc",
-    "keyword": "ans_933e8982-2f12-4f5c-a670-e699aeb71f4c",
+    "ref": "ans_de4d93e2-67c8-44d6-ba92-30a97f2c74e1",
+    "keyword": "ans_fd4f3a69-c5ec-47b7-883a-5645804ef763",
     "answer": "Te comparto los siguientes links de interés sobre el proceso\n\n                             *SERVICIO SOCIAL*\n_Departamento De Gestión Tecnológica Y Vinculación_\n\n🧾 *1* Para ver la documentación\n🎬 *2* Para Dudas Generales (Video)\n👉 *3* Fechas Importantes del Servicio Social\n🤔 *4* Dudas Frecuentes de los alumnos\n📂 *5* Consulta respecto a documentos de servicio social\n👩‍💻 *6* CONTACTO Unidad Tomas Aquino y OTAY ",
     "options": {
       "buttons": [],
@@ -86,12 +87,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "b7e0897458022e9eaf1d78f81a125119",
+    "refSerialize": "f766d04831da7998de56d9a07593a092",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_99865f9b-4133-43f1-b5a4-1c29538a6ab9",
-    "keyword": "ans_0758c362-7ab9-4098-812f-de09a131a1fc",
+    "ref": "ans_ddd52015-5c94-4a3f-96fb-75c5678a6634",
+    "keyword": "ans_de4d93e2-67c8-44d6-ba92-30a97f2c74e1",
     "answer": "__call_action__",
     "options": {
       "buttons": [],
@@ -101,12 +102,12 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "b08ad0c85ab23d8d714e4ca08fb4e330",
+    "refSerialize": "b785943d596c72efb8dd1b33652b35b5",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_5bdcfb66-33ef-4fbb-903b-67a37c28df76",
-    "keyword": "ans_99865f9b-4133-43f1-b5a4-1c29538a6ab9",
+    "ref": "ans_e707ece2-f922-4f8d-9851-e1e918f57bbb",
+    "keyword": "ans_ddd52015-5c94-4a3f-96fb-75c5678a6634",
     "answer": "Por favor, escribe el número de tu opción que deseas consultar:",
     "options": {
       "buttons": [],
@@ -116,12 +117,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "f1d7fdfbd44bc44e9082f1137e175361",
+    "refSerialize": "c7e826e66aa165920c78e41a3bf40e49",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_346b5d92-2b57-462a-ba7c-9db1ce494941",
-    "keyword": "ans_5bdcfb66-33ef-4fbb-903b-67a37c28df76",
+    "ref": "ans_2465f655-6a07-4529-99db-f9704231b691",
+    "keyword": "ans_e707ece2-f922-4f8d-9851-e1e918f57bbb",
     "answer": "__capture_only_intended__",
     "options": {
       "buttons": [],
@@ -131,21 +132,21 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "706cf9190683730175d47802db1b9cad",
+    "refSerialize": "045d87a06afc47852dddd2a99bdd1796",
     "from": "5216642673466"
   },
   {
-    "ref": "92abc71b-d99d-498f-8cce-8b7026888d6d",
-    "keyword": "706cf9190683730175d47802db1b9cad",
-    "answer": "3",
+    "ref": "2abb7098-69e4-4ebd-b564-27f203ecfefe",
+    "keyword": "045d87a06afc47852dddd2a99bdd1796",
+    "answer": "4",
     "options": {},
     "from": "5216642673466",
-    "refSerialize": "7af65864494b12f0f7ef00589f4d3979"
+    "refSerialize": "e8139b7fa2fbc1b48f247924f8ad1961"
   },
   {
-    "ref": "f4d0a9ab-3306-4adf-9e77-e8054123c24a",
+    "ref": "2f7e450d-1129-4cf0-b843-5fc17b2c9865",
     "keyword": null,
-    "answer": "*FECHAS IMPORTANTES*",
+    "answer": "Accediendo a dudas frecuentes...",
     "options": {
       "media": null,
       "buttons": [],
@@ -153,12 +154,148 @@
       "delay": 0
     },
     "from": "5216642673466",
-    "refSerialize": "bd934fe786120f49e069f2b00d16c060"
+    "refSerialize": "7d503bb8b139675afdbfece58b249089"
   },
   {
-    "ref": "c6954a00-ae0b-49e0-b85b-ac64371275d4",
+    "ref": "ans_463bf51d-64f3-4025-942e-5e8b5a00bec1",
+    "keyword": "ans_2465f655-6a07-4529-99db-f9704231b691",
+    "answer": "⭕ Por favor, escribe el número de tu opción que deseas consultar:\n🟢 Escribe un número (1-5)\n🔴 \"menu\" para volver al menú dudas frecuentes\n🟡 \"salir\" para volver al menú principal",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "7f047c60853bc1aff5f3a09db8b8311a",
+    "from": "5216642673466"
+  },
+  {
+    "ref": "ans_f8cea223-81ac-47ad-b2ce-4d2f77b58b7e",
+    "keyword": "ans_463bf51d-64f3-4025-942e-5e8b5a00bec1",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "43748b3328e27205e6f9f951cd930cc3",
+    "from": "5216642673466"
+  },
+  {
+    "ref": "ans_915c2060-4a0a-49df-8922-546e68b78f78",
+    "keyword": "key_3ff16681-cd5b-4a9d-b741-1639ea716cfe",
+    "answer": "¿Como puedo ayudarte?😁",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "72bc00c8719d02a78723594bee4471a5",
+    "from": "5216642673466"
+  },
+  {
+    "ref": "ans_6cc6e234-7f3d-4d3f-8afa-250d95c3f91d",
+    "keyword": "ans_915c2060-4a0a-49df-8922-546e68b78f78",
+    "answer": "1️⃣  ¿Dónde puedo realizar mi registro?\n2️⃣  ¿Cuándo inicia el servicio social?\n3️⃣  ¿Cuánto tiempo dura el servicio social?\n4️⃣  ¿No aparece el Servicio Social en Ambar?\n5️⃣  ¿Hasta cuándo tengo para subir documentos?\n6️⃣  ¿Dónde puedo realizar mi servicio Social?\n7️⃣  ¿Necesito mi constancia de liberación?\n8️⃣  ¿Me llegó un correo para darme de baja?\n9️⃣  ¿Problemas con documentos iniciales?\n🔟  ¿Seguro facultativo?",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "839cfc1086ec25c05801e7b87e966e87",
+    "from": "5216642673466"
+  },
+  {
+    "ref": "ans_b21932f1-0e3f-43c6-991a-4de1596c68c4",
+    "keyword": "ans_6cc6e234-7f3d-4d3f-8afa-250d95c3f91d",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "ffbfc34834bb97f70ae0439087176877",
+    "from": "5216642673466"
+  },
+  {
+    "ref": "ans_2cd637fe-b0ba-47c5-b672-1a0cfca0d1e4",
+    "keyword": "ans_b21932f1-0e3f-43c6-991a-4de1596c68c4",
+    "answer": "_Galgo Asistente_",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "45c872e578d40dbfa339cb5abdd9167f",
+    "from": "5216642673466"
+  },
+  {
+    "ref": "ans_ddd9c64d-ce2e-4427-be82-2dab48b3ec49",
+    "keyword": "ans_2cd637fe-b0ba-47c5-b672-1a0cfca0d1e4",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "558d2dbf72cb71f129b58535d6a6024a",
+    "from": "5216642673466"
+  },
+  {
+    "ref": "f1cd2f45-63e4-4248-ba00-13de897f55cb",
+    "keyword": "558d2dbf72cb71f129b58535d6a6024a",
+    "answer": "l",
+    "options": {},
+    "from": "5216642673466",
+    "refSerialize": "7d3a8630e41ea7d404b8a0b3b2e95013"
+  },
+  {
+    "ref": "ans_ddd9c64d-ce2e-4427-be82-2dab48b3ec49",
+    "keyword": "ans_2cd637fe-b0ba-47c5-b672-1a0cfca0d1e4",
+    "answer": "⚠️ Por favor, selecciona una opción válida (1-10)",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "558d2dbf72cb71f129b58535d6a6024a",
+    "from": "5216642673466"
+  },
+  {
+    "ref": "b3ba4978-01bf-43d3-b793-2ef94dedc388",
+    "keyword": "558d2dbf72cb71f129b58535d6a6024a",
+    "answer": "2",
+    "options": {},
+    "from": "5216642673466",
+    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
+  },
+  {
+    "ref": "06dee419-c7d1-45ac-ab6a-2501876c7d34",
     "keyword": null,
-    "answer": "Inscripción: del 5 de agosto al 19 de agosto del 2024",
+    "answer": "*INICIO DEL SERVICIO SOCIAL*",
     "options": {
       "media": null,
       "buttons": [],
@@ -166,12 +303,12 @@
       "delay": 0
     },
     "from": "5216642673466",
-    "refSerialize": "0cd54227120aacbc48dfbb67fe07be90"
+    "refSerialize": "111577bd031d37b5f5322ec50d63b77f"
   },
   {
-    "ref": "1274e29b-18f8-4992-a294-6f4b34c2f58f",
+    "ref": "84bbd16f-3549-475e-bd95-54a8fbe3dccb",
     "keyword": null,
-    "answer": "Periodo: Septiembre - Diciembre 2024",
+    "answer": "*El periodo actual es:*",
     "options": {
       "media": null,
       "buttons": [],
@@ -179,11 +316,50 @@
       "delay": 0
     },
     "from": "5216642673466",
-    "refSerialize": "f2fdbc6a57749a99be325f35a2d1ab0f"
+    "refSerialize": "00c0e09959b2df7d4b01d6b6939fbb85"
   },
   {
-    "ref": "ans_a33ccb37-36d8-48a7-8054-9c70946cbf70",
-    "keyword": "ans_346b5d92-2b57-462a-ba7c-9db1ce494941",
+    "ref": "c0c4b9a4-fc36-4d78-a15e-e015d0e4e9e3",
+    "keyword": null,
+    "answer": "• AGOSTO 24 - FEBRERO 25",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5216642673466",
+    "refSerialize": "60660e10ca7159bd497cd6339e695469"
+  },
+  {
+    "ref": "2549488f-ec16-4d42-b919-804cf7eeb5a1",
+    "keyword": null,
+    "answer": "\n*La fecha de inscripción*",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5216642673466",
+    "refSerialize": "60dcf3a1612ef213dc42a35f4d51b15d"
+  },
+  {
+    "ref": "ff34694a-ce12-4a0f-8220-0c81c9360120",
+    "keyword": null,
+    "answer": "• 5 de agosto al 19 de agosto del 2024",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5216642673466",
+    "refSerialize": "4f900ae15f93f50eb5213076ff1d9f36"
+  },
+  {
+    "ref": "ans_b5412259-9877-4acf-9093-03b0397182ba",
+    "keyword": "ans_ddd9c64d-ce2e-4427-be82-2dab48b3ec49",
     "answer": "⭕ Por favor, escribe el número de tu opción que deseas consultar:\n🟢 Escribe un número (1-10)\n🔴 \"menu\" para volver al menú dudas frecuentes\n🟡 \"salir\" para volver al menú principal",
     "options": {
       "buttons": [],
@@ -193,12 +369,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "dedd0c2456853d56796979d6cf232b06",
+    "refSerialize": "1010f3ef4c95606bc62f0e88aca66258",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_7d7ab881-9aec-4196-ad39-44a90e9f19b7",
-    "keyword": "ans_a33ccb37-36d8-48a7-8054-9c70946cbf70",
+    "ref": "ans_bf81baa0-64d7-47bc-9ad4-a04f9b2eb8c1",
+    "keyword": "ans_b5412259-9877-4acf-9093-03b0397182ba",
     "answer": "__capture_only_intended__",
     "options": {
       "buttons": [],
@@ -208,7 +384,7 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "9de43b5d404ad30586f7cac1bf2e313f",
+    "refSerialize": "263297852323ad693c60e1fa725fc778",
     "from": "5216642673466"
   }
 ]

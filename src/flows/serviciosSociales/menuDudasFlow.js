@@ -25,7 +25,7 @@ import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
     .addAnswer(
       '_Galgo Asistente_',
       { capture: true },
-      async (ctx, {fallback, flowDynamic}) => {
+      async (ctx, {fallBack, flowDynamic}) => {
         const opcion = ctx.body.trim();
       
         const respuestas = {
@@ -126,7 +126,7 @@ import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
           return flowDynamic(respuestas[opcion]);
         }
   
-        return fallback('⚠️ Por favor, selecciona una opción válida (1-5)');
+        return fallBack('⚠️ Por favor, selecciona una opción válida (1-10)');
       }
     )
     .addAnswer(

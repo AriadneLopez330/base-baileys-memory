@@ -1,4 +1,5 @@
 import { addKeyword } from '@builderbot/bot';
+import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
 
 export const visIndus = addKeyword(['visitas industriales', 'visitas', 'Visitas'])
   .addAnswer('Bienvenido al área de Visitas industriales')
@@ -9,12 +10,11 @@ export const visIndus = addKeyword(['visitas industriales', 'visitas', 'Visitas'
     '3.-🚌Transporte',
     '4.-📌Seguro social/seguro facultativo',
     '5.-🪪Contacto',
-    '\nPor favor, escribe el número de tu opción:'
   ])
   .addAnswer(
-   // 'Por favor, escribe el número de tu opción:',
+   'Por favor, escribe el número de tu opción:',
     { capture: true },
-    async (ctx, { fallback, flowDynamic }) => {
+    async (ctx, { fallBack, flowDynamic }) => {
       const opcion = ctx.body.trim();
       
       const respuestas = {
@@ -57,7 +57,7 @@ export const visIndus = addKeyword(['visitas industriales', 'visitas', 'Visitas'
           '1.-*Disponibilidad*',
           '¿El transporte es automático con la solicitud inicial y el llenado de documentos?',
           'El transporte es independiente a la solicitud de visitas industriales, la disposición del transporte está sujeta a cambios.',
-          'A)	Solicitudes prioritarias, provenientes de los directivos de CDMX',
+          'A)Solicitudes prioritarias, provenientes de los directivos de CDMX',
           '\n📌Eventos Deportivos',
           '\n📌Eventos Culturales',
           'B) No te preocupes en caso de que sea así, se reagendara la visita,',
@@ -85,18 +85,29 @@ export const visIndus = addKeyword(['visitas industriales', 'visitas', 'Visitas'
         return flowDynamic(respuestas[opcion]);
       }
 
-      return fallback('⚠️ Por favor, selecciona una opción válida (1-4)');
+      return fallBack('⚠️ Por favor, selecciona una opción válida (1-5)');
     }
   )
   .addAnswer(
     [
-      '\n¿Deseas consultar otra opción?',
-      'Escribe un número (1-5) o escribe *menu* para volver al menú principal'
+      '⭕ Por favor, escribe el número de tu opción que deseas consultar:',
+      '🟢 Escribe un número (1-5)', 
+      '🔴 "menu" para volver al menú dudas frecuentes',
+      '🟡 "salir" para volver al menú principal'
     ],
     { capture: true },
-    async (ctx, { gotoFlow }) => {
-      if (ctx.body.toLowerCase() === 'menu') {
-        return gotoFlow(menuPrincipalFlow);
+    async (ctx, { gotoFlow, fallBack }) => {
+      try {
+        if (ctx.body.toLowerCase() === 'menu') {
+          return gotoFlow(visIndus);
+        }
+        else if (ctx.body.toLowerCase() === 'salir') {
+          return gotoFlow(menuPrincipalFlow);
+        }
+        return fallBack('⚠️ Por favor, selecciona una opción válida');
+      } catch (error) {
+        console.error('Error en el flujo:', error);
+        return fallBack('❌ Ocurrió un error, por favor intenta de nuevo');
       }
     }
   );

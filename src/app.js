@@ -2,13 +2,12 @@ import { createBot, createProvider, createFlow, addKeyword } from '@builderbot/b
 import { JsonFileDB as Database } from '@builderbot/database-json'
 import { BaileysProvider as Provider } from '@builderbot/provider-baileys'
 import { PORT } from './config.js'
-//import { welcomeFlow } from './Departamento/wellcomeFlow.js'
-//import { flowresidencia } from './Departamento/residenciaFlow.js'
-//import { menuSocial } from './flows/serviciosSociales/menuSocial.js'
-import { menuPrincipalFlow } from './flows/menuPrincipalFlow.js'
+import { flowCrono } from './flows/serviciosSociales/ssocialflow.js'
 import { menuSocial } from './flows/serviciosSociales/menuSocial.js'
 import { visIndus } from './flows/visitasIndustriales/visitasmenu.js'
 import { flowMenuDudas } from './flows/serviciosSociales/menuDudasFlow.js'
+import { flowResidencia } from './flows/residencias/residenciaFlow.js'
+import { menuPrincipalFlow } from './flows/menuPrincipalFlow.js'
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
@@ -30,7 +29,9 @@ const main = async () => {
     menuSocial,
     visIndus,
     flowGracias,
-    flowMenuDudas
+    flowMenuDudas,
+    flowResidencia,
+    flowCrono
     ])
     const adapterProvider = createProvider(Provider)
     const adapterDB = new Database({ filename: 'db.json' })

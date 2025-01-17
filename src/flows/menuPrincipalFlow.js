@@ -25,8 +25,6 @@ export const menuPrincipalFlow = addKeyword(EVENTS.WELCOME)
       switch(opcion) {
         case '1':
           return gotoFlow(menuSocial);
-        // case '2':
-        //   return gotoFlow(flowMenuDudas);
         case '2':
           return gotoFlow(flowGPT);
         case '3':

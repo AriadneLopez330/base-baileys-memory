@@ -24,12 +24,12 @@ export const menuSocial = addKeyword(['social', 'servicio social'])
     .addAnswer(
       'Por favor, escribe el número de tu opción que deseas consultar:',
       { capture: true},
-      async (ctx, {flowDynamic, gotoFlow, fallback}) => {
+      async (ctx, {flowDynamic, gotoFlow, fallBack}) => {
         const opcion = ctx.body.trim();
         
         if (opcion === '4') {
           await flowDynamic('Accediendo a dudas frecuentes...');
-          ctx.body = 'ver_dudas';  // Cambiamos el body para activar el flujo correcto
+          ctx.body = 'ver_dudas';
           return gotoFlow(flowMenuDudas);
         }
       //para las otras opciones, utiliza el objeto respuestas
@@ -49,9 +49,9 @@ export const menuSocial = addKeyword(['social', 'servicio social'])
             'https://youtu.be/OCyEh-ACckA',
           ],
           '2': [
-            'Si tienes dudas respecto al servicio social, consulta el video de inducción\n',
-            '\n Video Inducción del Servicio Social ITT',
-            'https://youtu.be/OCyEh-ACckA',
+            'Si tienes dudas respecto al servicio social, consulta el video de inducción',
+            'Video Inducción del Servicio Social ITT',
+            '📽️ https://youtu.be/OCyEh-ACckA',
           ],
           '3': [
             '*FECHAS IMPORTANTES*',
@@ -76,7 +76,7 @@ export const menuSocial = addKeyword(['social', 'servicio social'])
           return flowDynamic(respuestas[opcion]);
         }
   
-        return fallback('⚠️ Por favor, selecciona una opción válida (1-5)');
+        return fallBack('⚠️ Por favor, selecciona una opción válida (1-5)');
       }
     )
     .addAnswer(
