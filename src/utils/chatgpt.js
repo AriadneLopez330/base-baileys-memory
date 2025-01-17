@@ -33,7 +33,7 @@ const processUserMessage = async (ctx, { flowDynamic, state, provider }) => {
     }
   } catch (error) {
     console.error('Error detallado en processUserMessage:', error);
-    await flowDynamic('❌ Error al procesar tu consulta. Por favor, verifica que tu pregunta sea sobre servicio social.');
+    await flowDynamic('❌ Error al procesar tu consulta. Por favor, verifica que tu pregunta sea sobre servicio social y la documentación.');
   }
 };
 

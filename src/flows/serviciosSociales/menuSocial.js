@@ -9,18 +9,18 @@ import { gptFlow } from './gptFlow.js';
 ////////////////////////////Menu principal de servicio social///////////////////////////////////////
 export const menuSocial = addKeyword(['social', 'servicio social'])
   //const MenuPrincipal = addKeyword ('Servicio Social')
-  .addAnswer('¿Como puedo ayudarte?😁')
+  .addAnswer('¿Cómo puedo ayudarte? 😁')
   .addAnswer(
     [
-      'Te comparto los siguientes links de interés sobre el proceso\n',
+      'Te comparto los siguientes enlaces de interés sobre el proceso:\n',
       '                             *SERVICIO SOCIAL*',
-      '_Departamento De Gestión Tecnológica Y Vinculación_\n',
-      '🤔 *1* Dudas Frecuentes de los alumnos',
+      '_Departamento de Gestión Tecnológica y Vinculación_\n',
+      '🤔 *1* Dudas frecuentes de los alumnos',
       '🧾 *2* Consultar documentación',
-      '🎬 *3* Video oficial dudas generales',
-      '👉 *4* Fechas Importantes (cronograma)',
+      '🎬 *3* Video oficial de dudas generales',
+      '👉 *4* Fechas importantes (cronograma)',
       '🤖 *5* Galgo Asistente (Ayuda)',
-      '👩‍💻 *6* CONTACTO Unidad Tomas Aquino y OTAY ',
+      '👩‍💻 *6* CONTACTO Unidad Tomás Aquino y OTAY'
     ])
     .addAnswer(
       'Por favor, escribe el número de tu opción que deseas consultar:',

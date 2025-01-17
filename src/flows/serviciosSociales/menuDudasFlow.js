@@ -5,20 +5,19 @@ import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
   ////////////////////////
   export const flowMenuDudas = addKeyword(['social', 'servicio social'])
   //const MenuPrincipal = addKeyword ('Servicio Social')
-  .addAnswer('¿Como puedo ayudarte?😁')
+  .addAnswer('¿Cómo puedo ayudarte? 😁')
   .addAnswer(
     [
     '1️⃣  ¿Dónde puedo realizar mi registro?',
     '2️⃣  ¿Cuándo inicia el servicio social?',
     '3️⃣  ¿Cuánto tiempo dura el servicio social?',
-    '4️⃣  ¿No aparece el Servicio Social en Ambar?',
+    '4️⃣  ¿No aparece el Servicio Social en AMBAR?',
     '5️⃣  ¿Hasta cuándo tengo para subir documentos?',
-    '6️⃣  ¿Dónde puedo realizar mi servicio Social?',
+    '6️⃣  ¿Dónde puedo realizar mi Servicio Social?',
     '7️⃣  ¿Necesito mi constancia de liberación?',
     '8️⃣  ¿Me llegó un correo para darme de baja?',
     '9️⃣  ¿Problemas con documentos iniciales?',
     '🔟  ¿Seguro facultativo?',
-  
     ], 
     
   )
@@ -119,7 +118,8 @@ import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
             '\nEn caso de vigencia: BAJA',
             '• Solicitar en servicios escolares',
             '• Dada de ALTA en IMSS por la institución',
-            '• Llenar Formulario (respuesta en 24h a 72h)',
+            '• Llenar Formulario correo institucional (respuesta en 24h-72h)',
+            'https://docs.google.com/forms/d/e/1FAIpQLSdkThP_9thmb3iETqCkkxkGZa9nFK3_Nf2lFbLNCedQy4zSlg/alreadyresponded'
           ]
         };
         if (respuestas[opcion]) {
@@ -131,9 +131,9 @@ import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
     )
     .addAnswer(
       [
-        '⭕ Por favor, escribe el número de tu opción que deseas consultar:',
+        '⭕ Por favor, escribe el número de tu opción:',
         '🟢 Escribe un número (1-10)', 
-        '🔴 "menu" para volver al menú dudas frecuentes',
+        '🔴 "menu" para volver al menú de dudas frecuentes',
         '🟡 "salir" para volver al menú principal'
       ],
       { capture: true },
