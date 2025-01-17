@@ -66,9 +66,9 @@ import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
             '5': [
             '*FECHAS LÍMITE DOCUMENTOS*',
             'CARGA DE DOCUMENTOS',
-            '_FASE 1_',
+            '🔸_FASE 1_',
             '• 23 al 30 de Agosto de 2024', //🗝️ACTUALIZAR CADA SEMESTRE
-            'REVISIÓN FASE 1',
+            '🔸_REVISIÓN FASE 1_',
             '• 24 de Agosto del 2024', //🗝️ACTUALIZAR CADA SEMESTRE
           ],
           '6': [

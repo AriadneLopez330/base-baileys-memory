@@ -103,9 +103,13 @@ const flowGPT = addKeyword(['documentos servicio social', 'preguntas', '5'])
   )
   .addAnswer(
     [
-      '🤖Específica el que documento tu duda,',
-      '\n⭕🤖Punto (número) dónde tienes problemas del llenado',
-    ],
+      '🤖¿Qué documento quieres consultar?',
+      '_Especificaciones técnicas_',
+      '► Nombre del documento',
+      '► Número del punto a consultar',
+      'Ejemplo: Del documento solicitud con foto quiero saber qué debo poner en Nombre del Programa (18) .',
+      '_Recuerda consultar primero las dudas frecuentes ubicadas en el menú principal >> 4 dudas frecuentes >> Listado._',
+      ],
     { capture: true },
     async (ctx, { flowDynamic }) => {
       const respuesta = await handleQueue.handleMsgChatGPT(ctx.body); //uso de la función de handleMsgChatGPT para obtener la respuesta del chatgpt

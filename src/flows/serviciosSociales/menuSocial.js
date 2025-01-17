@@ -38,6 +38,13 @@ export const menuSocial = addKeyword(['social', 'servicio social'])
           await flowDynamic('Iniciando asistente Galgo...');
           return gotoFlow(flowGPT);
         }
+        if (opcion === '4') {
+          await flowDynamic(['*FECHAS IMPORTANTES*',
+            '✒️Inscripción: del 5 de agosto al 19 de agosto del 2024', //🗝️modificar fecha cada semestre🗝️
+            '📌Periodo: Enero - Julio 2025', //🗝️modificar fecha cada semestre🗝️
+            ]);
+          return gotoFlow(flowCrono);
+        }
 
         const respuestas = {
           '2': [
@@ -58,12 +65,6 @@ export const menuSocial = addKeyword(['social', 'servicio social'])
             'Si tienes dudas respecto al servicio social, consulta el video de inducción',
             'Video Inducción del Servicio Social ITT',
             '📽️ https://youtu.be/OCyEh-ACckA',
-          ],
-          '4': [
-            '*FECHAS IMPORTANTES*',
-            'Inscripción: del 5 de agosto al 19 de agosto del 2024', //🗝️modificar fecha cada semestre🗝️
-            'Periodo: Septiembre - Diciembre 2024', //🗝️modificar fecha cada semestre🗝️
-            [flowCrono]
           ],
           '6': [
             '--------UNIDAD TOMAS AQUINO-----------\n',
