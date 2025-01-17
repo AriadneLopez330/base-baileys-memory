@@ -1,16 +1,17 @@
 import { addKeyword } from '@builderbot/bot';
 import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
-// Definir respuestasR fuera del flujo para que sea accesible en todos los handlers
+
+// Definir respuestasR fuera del flujo
 const respuestasR = {
   '1': [
     'POLIZA: VG-TEC-183-05'
   ],
   '2': ['✉️Carta de presentación',
-    'https://docs.google.com/forms/d/e/1FAIpQLSc1L0G9fsUeM4AAAKAiMKVoIgN34ODKBZ6pIiKMXam-utaELQ/viewform',
+    'https://docs.google.com/forms/d/e/1FAIpQLSc1L0G9fsUeM4AAAKAiMKVoIgN34ODKBZ6pIiKMXam-utaELQ/viewform'
   ],
   '3': [
     '🏢Banco de proyectos para residencias profesionales',
-    'https://docs.google.com/spreadsheets/d/1ltEp3P3uMU77sVTjykXy0LUJ9mSae5um/edit?usp=sharing&ouid=113306876051632131679&rtpof=true&sd=true',
+    'https://docs.google.com/spreadsheets/d/1ltEp3P3uMU77sVTjykXy0LUJ9mSae5um/edit?usp=sharing&ouid=113306876051632131679&rtpof=true&sd=true'
   ],
   '4': [
     '*Residencias Profesionales*',
@@ -21,19 +22,17 @@ const respuestasR = {
   ]
 };
 
-export const flowResidencia = addKeyword(['3', 'residencias'])
+export const flowResidencia = addKeyword(['residencias'])
   .addAnswer('Oficina Residencias Profesionales')
-  .addAnswer(
-    [
-      'Te comparto los siguientes links de interés sobre el proceso\n',
-      '           *Residencias Profesionales*',
-      '_Departamento De Gestión Tecnológica Y Vinculación_\n',
-      '📌 *1* Póliza',
-      '🧾 *2* Carta presentación',
-      '📂 *3* Banco de proyectos',
-      '👩‍💻 *4* CONTACTO Unidad Tomas Aquino',
-    ]
-  )
+  .addAnswer([
+    'Te comparto los siguientes links de interés sobre el proceso\n',
+    '           *Residencias Profesionales*',
+    '_Departamento De Gestión Tecnológica Y Vinculación_\n',
+    '📌 *1* Póliza',
+    '🧾 *2* Carta presentación',
+    '📂 *3* Banco de proyectos',
+    '👩‍💻 *4* CONTACTO Unidad Tomas Aquino',
+  ])
   .addAnswer(
     'Por favor, escribe el número de tu opción que deseas consultar:',
     { capture: true },
@@ -41,42 +40,41 @@ export const flowResidencia = addKeyword(['3', 'residencias'])
       const opcion = ctx.body.trim();
       
       if (respuestasR[opcion]) {
-        return flowDynamic(respuestasR[opcion]);
+        await flowDynamic(respuestasR[opcion]);
+      } else {
+        await flowDynamic(['⚠️ Por favor, selecciona una opción válida (1-4)']);
       }
-      
-      return flowDynamic(['⚠️ Por favor, selecciona una opción válida (1-4)']);
     }
   )
+  .addAnswer([
+    '*¿Qué deseas hacer?*',
+    '',
+    '1️⃣ Seguir en menú Residencias',
+    '2️⃣ Menú Principal',
+    '3️⃣ Finalizar conversación'
+  ])
   .addAnswer(
-    [
-      '⭕ Por favor, escribe el número de tu opción que deseas consultar:',
-      '🟢 Escribe un número (1-4)', 
-      '🔴 "menu" para volver al menú dudas frecuentes',
-      '🟡 "salir" para volver al menú principal'
-    ],
+    '_Responde con el número de tu elección_',
     { capture: true },
-    async (ctx, { gotoFlow, flowDynamic, fallBack }) => {
-      try {
-        const opcion = ctx.body.trim();
-        
-        if (opcion.toLowerCase() === 'menu') {
-          await gotoFlow(flowResidencia);
-          return;
-        }
-        
-        if (opcion.toLowerCase() === 'salir') {
-          await gotoFlow(menuPrincipalFlow);
-          return;
-        }
-        
-        if (respuestasR[opcion]) {
-          await flowDynamic(respuestasR[opcion]);
-        } else {
-          await flowDynamic(['⚠️ Por favor, selecciona una opción válida (1-4)']);
-        }
-      } catch (error) {
-        console.error('Error en el segundo handler:', error);
-        await fallBack();
+    async (ctx, { gotoFlow, flowDynamic }) => {
+      const opcion = ctx.body.trim().toLowerCase();
+      
+      // Primero mostramos el mensaje de transición
+      if (opcion === '1' || opcion === 'menu') {
+        await flowDynamic('↩️ Volviendo al menú de Residencias...');
+        return gotoFlow(flowResidencia);
       }
+      
+      if (opcion === '2' || opcion === 'salir') {
+        await flowDynamic('↩️ Volviendo al menú Principal...');
+        return gotoFlow(menuPrincipalFlow);
+      }
+      if (opcion === '3') {
+        return gotoFlow(flowGracias);
+      }
+
+      // Si la opción no es válida
+      await flowDynamic('⚠️ Opción no válida, por favor intenta de nuevo');
+      return gotoFlow(flowResidencia);
     }
   );

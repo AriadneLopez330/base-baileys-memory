@@ -50,16 +50,14 @@ export const menuSocial = addKeyword(['social', 'servicio social'])
           '2': [
             '*DOCUMENTACIÓN DEL SERVICIO SOCIAL*',
             'https://www.tijuana.tecnm.mx/servicio-social/', //🗝️modificar url en cambio de documentacion🗝️
-            '\n\n*Formatos para Proceso de Servicio Social*',
-            '\n📂Manual de apertura de expediente✒️',
+            '*Formatos para Proceso de Servicio Social*',
+            '📂Manual de apertura de expediente✒️',
             '\n(*FASE 1*)',
             'https://www.tijuana.tecnm.mx/wp-content/uploads/2024/08/MANUAL-1-AGO-DIC-2024-REVISADO.pdf',//🗝️modificar url en cambio de documentacion🗝️
             '\n(*FASE 2*)',
             'https://www.tijuana.tecnm.mx/wp-content/uploads/2024/08/MANUAL-2-AGO2024-REVISADO.pdf',//🗝️modificar url en cambio de documentacion🗝️
-            '\n*Documentación de Curso de Inducción*',
-            'https://view.genially.com/663d4ada521f6000143c2380/presentation-guia-de-induccion-servicio-social-del-tecnologico',//🗝️modificar url en cambio de documentacion🗝️
-            '\nVideo de Inducción, Preguntas Generales del servicio social',
-            'https://youtu.be/OCyEh-ACckA',
+            '*Documentación de Curso de Inducción*\nhttps://view.genially.com/663d4ada521f6000143c2380/presentation-guia-de-induccion-servicio-social-del-tecnologico',//🗝️modificar url en cambio de documentacion🗝️
+            'Video de Inducción, Preguntas Generales del servicio social \nhttps://youtu.be/OCyEh-ACckA',
           ],
           '3': [
             'Si tienes dudas respecto al servicio social, consulta el video de inducción',
@@ -87,20 +85,39 @@ export const menuSocial = addKeyword(['social', 'servicio social'])
         return fallBack('⚠️ Por favor, selecciona una opción válida (1-6)');
       }
     )
+    .addAnswer([
+      '*¿Qué deseas hacer?*',
+      '',
+      '1️⃣ Seguir en menú Servicio Social',
+      '2️⃣ Menú Principal',
+      '3️⃣ Finalizar conversación'
+    ])
     .addAnswer(
-      [
-        '⭕ Por favor, escribe el número de tu opción que deseas consultar:',
-        '🟢 Escribe un número (1-6)', 
-        '🔴 "menu" para volver al menú dudas frecuentes',
-        '🟡 "salir" para volver al menú principal'
-      ],
+      '_Responde con el número de tu elección_',
       { capture: true },
-      async (ctx, { gotoFlow }) => {
-        if (ctx.body.toLowerCase() === 'menu') {
-          return gotoFlow(menuSocial);
-        }
-        else if (ctx.body.toLowerCase() === 'salir') {
+      async (ctx, { gotoFlow, flowDynamic, fallBack }) => {
+        try {
+          const opcion = ctx.body.trim().toLowerCase();
+          
+          if (opcion === '1') {
+            await flowDynamic('↩️ Volviendo al menú de Servicio Social...');
+            return gotoFlow(menuSocial);
+          }
+          
+          if (opcion === '2') {
+            await flowDynamic('↩️ Volviendo al menú Principal...');
             return gotoFlow(menuPrincipalFlow);
+          }
+          if (opcion === '3') {
+            return gotoFlow(flowGracias);
+          }
+
+          await flowDynamic('⚠️ Opción no válida');
+          return gotoFlow(menuSocial);
+
+        } catch (error) {
+          console.error('Error en navegación:', error);
+          return fallBack('❌ Ocurrió un error, por favor intenta de nuevo');
         }
       }
     );

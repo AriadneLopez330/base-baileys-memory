@@ -5,11 +5,11 @@ export const visIndus = addKeyword(['visitas industriales', 'visitas', 'Visitas'
   .addAnswer('Bienvenido al área de Visitas industriales')
   .addAnswer('-----DUDAS GENERALES-----')
   .addAnswer([
-    '1.- 📅Fecha de apertura y fecha final para la convocatoria de visitas industriales',
-    '2.-📂Documentos a entregar',
-    '3.-🚌Transporte',
-    '4.-📌Seguro social/seguro facultativo',
-    '5.-🪪Contacto',
+    '*1.*📅Fecha de apertura y fecha final para la convocatoria de visitas industriales',
+    '*2.*📂Documentos a entregar',
+    '*3.*🚌Transporte',
+    '*4.*📌Seguro social/seguro facultativo',
+    '*5.*🪪Contacto',
   ])
   .addAnswer(
    'Por favor, escribe el número de tu opción:',
@@ -75,9 +75,7 @@ export const visIndus = addKeyword(['visitas industriales', 'visitas', 'Visitas'
         ],
         '5': [
           '*Encarada de visitas industriales*',
-          '• M.A. Marisol Chávez De Landa',
-          'Correo: visitasindustriales@tectijuana.edu.mx',
-          'Teléfono: (664) 607-84-00. ext. 143',
+          '• M.A. Marisol Chávez De Landa \nCorreo: visitasindustriales@tectijuana.edu.mx\nTeléfono: (664) 607-84-00. ext. 143',
         ]
       };
 
@@ -88,23 +86,35 @@ export const visIndus = addKeyword(['visitas industriales', 'visitas', 'Visitas'
       return fallBack('⚠️ Por favor, selecciona una opción válida (1-5)');
     }
   )
+  .addAnswer([
+    '*¿Qué deseas hacer?*',
+    '',
+    '1️⃣ Seguir en menú Residencias',
+    '2️⃣ Menú Principal',
+    '3️⃣ Finalizar conversación'
+  ])
   .addAnswer(
-    [
-      '⭕ Por favor, escribe el número de tu opción que deseas consultar:',
-      '🟢 Escribe un número (1-5)', 
-      '🔴 "menu" para volver al menú dudas frecuentes',
-      '🟡 "salir" para volver al menú principal'
-    ],
+    '_Responde con el número de tu elección_',
     { capture: true },
-    async (ctx, { gotoFlow, fallBack }) => {
+    async (ctx, { gotoFlow, flowDynamic, fallBack }) => {
       try {
-        if (ctx.body.toLowerCase() === 'menu') {
+        const opcion = ctx.body.trim().toLowerCase();
+        
+        if (opcion === '1') {
+          await flowDynamic('↩️ Volviendo al menú de Visitas...');
           return gotoFlow(visIndus);
         }
-        else if (ctx.body.toLowerCase() === 'salir') {
+        
+        if (opcion === '2' || opcion === 'salir') {
+          await flowDynamic('↩️ Volviendo al menú Principal...');
           return gotoFlow(menuPrincipalFlow);
         }
-        return fallBack('⚠️ Por favor, selecciona una opción válida');
+        if (opcion === '3') {
+          return gotoFlow(flowGracias);
+        }
+        await flowDynamic('⚠️ Opción no válida');
+        return gotoFlow(visIndus);
+
       } catch (error) {
         console.error('Error en el flujo:', error);
         return fallBack('❌ Ocurrió un error, por favor intenta de nuevo');

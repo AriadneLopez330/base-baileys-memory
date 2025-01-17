@@ -1,15 +1,89 @@
 [
   {
-    "ref": "2de3d881-0f41-4448-8d6a-ba52db467356",
-    "keyword": "f45d91c687f456af42670ec03aa30f82",
-    "answer": "GH",
+    "ref": "55355a11-fe04-484f-aaaa-8c4a905b14d2",
+    "keyword": "3ccc09edd786e80e6e4ec6bd789b9cd9",
+    "answer": "gracias",
     "options": {},
     "from": "5216642673466",
-    "refSerialize": "6337d40af389f5e3ec329e9eaae121d9"
+    "refSerialize": "81fcae8cb1a09948a92c591b527233ce"
   },
   {
-    "ref": "ans_8bd414b9-98cd-4bd1-8ccb-eda221a3ddf1",
-    "keyword": "key_909dd19a-add8-47f4-8ad0-d33cd4e72692",
+    "ref": "62040953-894c-4966-83b8-69ae57b68a3b",
+    "keyword": "81fcae8cb1a09948a92c591b527233ce",
+    "answer": "gracias",
+    "options": {},
+    "from": "5216642673466",
+    "refSerialize": "81fcae8cb1a09948a92c591b527233ce"
+  },
+  {
+    "ref": "ans_498a4c8b-690c-400c-b38c-d84f10f2ed5a",
+    "keyword": "key_03ecf78e-7cee-45f1-aa85-b4c7a2beb514",
+    "answer": "*¡Ha sido un placer ayudarte! 👋*\n_Soy tu Asistente Galgo, siempre dispuesto a brindarte la mejor ayuda_\n\n1️⃣ Volver al menú principal\n2️⃣ Finalizar conversación",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "530519e2e71f8b9c9db3ef4d6ab4dcec",
+    "from": "5216642673466"
+  },
+  {
+    "ref": "ans_ed15705c-211b-4a74-a538-039b2fab72c0",
+    "keyword": "ans_498a4c8b-690c-400c-b38c-d84f10f2ed5a",
+    "answer": "_Responde con el número de tu elección_",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "5bc183df5b636e41acbbe46ba7a72ce1",
+    "from": "5216642673466"
+  },
+  {
+    "ref": "ans_c7136c04-829a-43f4-a370-a2ce28b384e9",
+    "keyword": "ans_ed15705c-211b-4a74-a538-039b2fab72c0",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "fe91397d56ecffef2c2130a70dfa6044",
+    "from": "5216642673466"
+  },
+  {
+    "ref": "d6996f29-07aa-4525-9d94-8af61313b6b2",
+    "keyword": "fe91397d56ecffef2c2130a70dfa6044",
+    "answer": "1",
+    "options": {},
+    "from": "5216642673466",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "a78f9e61-1d99-4186-9d25-a9ae2d64f9a0",
+    "keyword": null,
+    "answer": "↩️ Volviendo al menú Principal...",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5216642673466",
+    "refSerialize": "6bd4985ba05856d023887a649e434d96"
+  },
+  {
+    "ref": "ans_355e80fd-cd8d-49b0-8be9-e1dd3a2bd072",
+    "keyword": "key_07405224-ce27-4292-8af1-0086a7e35dd0",
     "answer": "*¡Bienvenido al Departamento de Gestión Tecnológica y Vinculación!* 👋\n\nSelecciona el servicio que necesitas:\n\n1️⃣ *Servicio Social*\n2️⃣ *Galgo Asistente servicio social*\n3️⃣ *Visitas Industriales*\n4️⃣ *Residencias Profesionales*",
     "options": {
       "buttons": [],
@@ -19,12 +93,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "5380a043a087ed324290bd3d954e0979",
+    "refSerialize": "6f66317b72373f32edf6d62dd5a13594",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_2c293daa-7379-42b9-aa78-7f9d2264b417",
-    "keyword": "ans_8bd414b9-98cd-4bd1-8ccb-eda221a3ddf1",
+    "ref": "ans_37bcb72a-6553-463f-bf5c-452c2e6808b3",
+    "keyword": "ans_355e80fd-cd8d-49b0-8be9-e1dd3a2bd072",
     "answer": "Por favor, escribe el número de tu opción:",
     "options": {
       "buttons": [],
@@ -34,12 +108,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "e375d9eda37a6966e9d9baba75866402",
+    "refSerialize": "ed8e33f69869d2307c1f29dd422f09cf",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_f75552d3-6c11-48cb-a005-98dc0f44c55e",
-    "keyword": "ans_2c293daa-7379-42b9-aa78-7f9d2264b417",
+    "ref": "ans_ce603203-ac57-4046-a79b-3f7b461d466c",
+    "keyword": "ans_37bcb72a-6553-463f-bf5c-452c2e6808b3",
     "answer": "__capture_only_intended__",
     "options": {
       "buttons": [],
@@ -49,35 +123,47 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "8c66ed7b09da46cd49042e49221c69f5",
+    "refSerialize": "4074c2eaa129bfbbed2c7128210c8139",
     "from": "5216642673466"
   },
   {
-    "ref": "ff5eb5a7-f953-41b4-a117-0fa78c3042c6",
-    "keyword": "8c66ed7b09da46cd49042e49221c69f5",
-    "answer": "2",
+    "ref": "1e02d8c8-243f-469b-a6f0-deb630ff12c2",
+    "keyword": "4074c2eaa129bfbbed2c7128210c8139",
+    "answer": "gracias",
     "options": {},
     "from": "5216642673466",
-    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
+    "refSerialize": "81fcae8cb1a09948a92c591b527233ce"
   },
   {
-    "ref": "ans_68e8ef48-58a2-4729-a373-dd387740d38c",
-    "keyword": "key_acf0a294-5180-4fed-814d-928c86c275c1",
-    "answer": "*🤖¿Cuáles son tus dudas respecto al servicio social?*",
+    "ref": "88ff40fd-6460-44fd-b398-9a22412188a6",
+    "keyword": null,
+    "answer": "⚠️ Por favor, selecciona una opción válida (1-4)",
     "options": {
+      "media": null,
       "buttons": [],
       "capture": false,
-      "delay": 0,
-      "nested": [],
-      "keyword": {},
-      "callback": true
+      "delay": 0
     },
-    "from": "5216642673466"
+    "from": "5216642673466",
+    "refSerialize": "8ce85dad764494c59b19653c1e40e52d"
   },
   {
-    "ref": "ans_c5c4ba1a-6d14-4400-b1ae-0541d70a088e",
-    "keyword": "ans_68e8ef48-58a2-4729-a373-dd387740d38c",
-    "answer": "🤖¿Qué documento quieres consultar?\n_Especificaciones técnicas_\n► Nombre del documento\n► Número del punto a consultar\nEjemplo: Del documento solicitud con foto quiero saber qué debo poner en Nombre del Programa (18) .\n_Recuerda consultar primero las dudas frecuentes ubicadas en el menú principal >> 4 dudas frecuentes >> Listado._",
+    "ref": "81c2796f-e97e-4548-b9d1-bd602592299d",
+    "keyword": null,
+    "answer": "Escribe 1, 2, 3 o 4",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5216642673466",
+    "refSerialize": "eb67e08715e1970a76529ac42e301089"
+  },
+  {
+    "ref": "ans_498a4c8b-690c-400c-b38c-d84f10f2ed5a",
+    "keyword": "key_03ecf78e-7cee-45f1-aa85-b4c7a2beb514",
+    "answer": "*¡Ha sido un placer ayudarte! 👋*\n_Soy tu Asistente Galgo, siempre dispuesto a brindarte la mejor ayuda_\n\n1️⃣ Volver al menú principal\n2️⃣ Finalizar conversación",
     "options": {
       "buttons": [],
       "capture": false,
@@ -86,11 +172,27 @@
       "keyword": {},
       "callback": false
     },
+    "refSerialize": "530519e2e71f8b9c9db3ef4d6ab4dcec",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_5dcdc52e-47fc-4281-a88d-4c020b481c77",
-    "keyword": "ans_c5c4ba1a-6d14-4400-b1ae-0541d70a088e",
+    "ref": "ans_ed15705c-211b-4a74-a538-039b2fab72c0",
+    "keyword": "ans_498a4c8b-690c-400c-b38c-d84f10f2ed5a",
+    "answer": "_Responde con el número de tu elección_",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "5bc183df5b636e41acbbe46ba7a72ce1",
+    "from": "5216642673466"
+  },
+  {
+    "ref": "ans_c7136c04-829a-43f4-a370-a2ce28b384e9",
+    "keyword": "ans_ed15705c-211b-4a74-a538-039b2fab72c0",
     "answer": "__capture_only_intended__",
     "options": {
       "buttons": [],
@@ -100,6 +202,139 @@
       "keyword": {},
       "callback": true
     },
+    "refSerialize": "fe91397d56ecffef2c2130a70dfa6044",
     "from": "5216642673466"
+  },
+  {
+    "ref": "0c93a192-2004-4f69-93fa-8dd4ad3955b8",
+    "keyword": "fe91397d56ecffef2c2130a70dfa6044",
+    "answer": "2",
+    "options": {},
+    "from": "5216642673466",
+    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
+  },
+  {
+    "ref": "ee6bea55-2eea-4202-9e17-b379ed5a7c84",
+    "keyword": null,
+    "answer": "👋 ¡Gracias por usar nuestro servicio!",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5216642673466",
+    "refSerialize": "39a648d5bbbe6965d210b4326de3b8ea"
+  },
+  {
+    "ref": "c8a15fac-ecd2-47c7-9480-bf876c6e9697",
+    "keyword": null,
+    "answer": "_Hasta pronto_",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "5216642673466",
+    "refSerialize": "df584a6bfecaa0cb68d242f8fec59f1d"
+  },
+  {
+    "ref": "ans_355e80fd-cd8d-49b0-8be9-e1dd3a2bd072",
+    "keyword": "key_07405224-ce27-4292-8af1-0086a7e35dd0",
+    "answer": "*¡Bienvenido al Departamento de Gestión Tecnológica y Vinculación!* 👋\n\nSelecciona el servicio que necesitas:\n\n1️⃣ *Servicio Social*\n2️⃣ *Galgo Asistente servicio social*\n3️⃣ *Visitas Industriales*\n4️⃣ *Residencias Profesionales*",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "6f66317b72373f32edf6d62dd5a13594",
+    "from": "5216632971325"
+  },
+  {
+    "ref": "ans_37bcb72a-6553-463f-bf5c-452c2e6808b3",
+    "keyword": "ans_355e80fd-cd8d-49b0-8be9-e1dd3a2bd072",
+    "answer": "Por favor, escribe el número de tu opción:",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "ed8e33f69869d2307c1f29dd422f09cf",
+    "from": "5216632971325"
+  },
+  {
+    "ref": "ans_ce603203-ac57-4046-a79b-3f7b461d466c",
+    "keyword": "ans_37bcb72a-6553-463f-bf5c-452c2e6808b3",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "4074c2eaa129bfbbed2c7128210c8139",
+    "from": "5216632971325"
+  },
+  {
+    "ref": "41ab5d2f-9310-49d8-b45b-41ca9815c6d5",
+    "keyword": "4074c2eaa129bfbbed2c7128210c8139",
+    "answer": "2",
+    "options": {},
+    "from": "5216632971325",
+    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
+  },
+  {
+    "ref": "ans_37bc4b3d-e888-494e-b651-1646e2c50f76",
+    "keyword": "key_1b70d41d-0a30-4ce1-9ac1-156bddee9455",
+    "answer": "*🤖 ¡Hola! Soy Galgo, tu asistente especializado en Servicio Social*\n_Estoy aquí para ayudarte con dudas sobre la documentación_\n_Mi objetivo es brindarte información precisa y oficial del Instituto Tecnológico_",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "333e309cd30037af135bb84ec45465a2",
+    "from": "5216632971325"
+  },
+  {
+    "ref": "ans_9cf7d0ee-4bff-4f78-a107-0f105f221f7a",
+    "keyword": "ans_37bc4b3d-e888-494e-b651-1646e2c50f76",
+    "answer": "🤖 *¿Qué documento quieres consultar?*\n📌 _Especificaciones técnicas:_\n🔸 Nombre del documento\n🔸 Número del punto a consultar\n\nEjemplo: Del documento *Solicitud con Foto* quiero saber qué debo poner en *Nombre del Programa (18)*.\n\n_Recuerda consultar primero las dudas frecuentes en el menú servicio social._",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "855d2bae1387218a44ec3e098f52016f",
+    "from": "5216632971325"
+  },
+  {
+    "ref": "ans_b421afd6-d8ee-4c18-8a56-9af1de008c3e",
+    "keyword": "ans_9cf7d0ee-4bff-4f78-a107-0f105f221f7a",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "0e8cf086027be5adb54631f47a9eb62e",
+    "from": "5216632971325"
   }
 ]

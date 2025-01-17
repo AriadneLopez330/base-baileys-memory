@@ -9,21 +9,10 @@ import { flowMenuDudas } from './flows/serviciosSociales/menuDudasFlow.js'
 import { flowResidencia } from './flows/residencias/residenciaFlow.js'
 import { menuPrincipalFlow } from './flows/menuPrincipalFlow.js'
 import { gptFlow } from './flows/serviciosSociales/gptFlow.js'
+import { flowGracias } from './flows/graciasFlow.js'
 
 
 /////////////////////////////////////////////////////////////////////////////////////////
-
-//FLUJO PRIMARIO
-    const flowGracias = addKeyword(['gracias', 'grac', 'seria todo, gracias']).addAnswer(
-        [
-            'De nada',
-            'Fue un placer',
-            'Soy tu Asistente Galgo!!\n, _Aún estoy mejorando para brindarte la mejor ayuda_',
-            '🙌Puedes ecribir *_menú_* para más ayuda🫡'
-        ],
-        null, null, [menuPrincipalFlow]
-    )
-    
 
 const main = async () => {
     const adapterFlow = createFlow([
