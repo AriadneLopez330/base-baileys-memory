@@ -1,7 +1,8 @@
 import { addKeyword } from '@builderbot/bot';
 import { flowMenuDudas } from './menuDudasFlow.js';
 import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
-//import { flowCrono } from './ssocialflow.js';
+import { flowCrono } from './ssocialflow.js';
+import { flowGPT } from './ssocialflow.js';
 //import { duda1, duda2, duda3, duda4, duda5, duda6, duda7, duda8, duda9, duda10 } from './dudasFrecuentes/dudasFlows.js';
 // O Opción 2: Importar todo como un objeto
 //import * as flows from './ssocialflow.js';
@@ -14,11 +15,11 @@ export const menuSocial = addKeyword(['social', 'servicio social'])
       'Te comparto los siguientes links de interés sobre el proceso\n',
       '                             *SERVICIO SOCIAL*',
       '_Departamento De Gestión Tecnológica Y Vinculación_\n',
-      '🧾 *1* Para ver la documentación',
-      '🎬 *2* Para Dudas Generales (Video)',
-      '👉 *3* Fechas Importantes del Servicio Social',
-      '🤔 *4* Dudas Frecuentes de los alumnos',
-      '📂 *5* Consulta respecto a documentos de servicio social',
+      '🤔 *1* Dudas Frecuentes de los alumnos',
+      '🧾 *2* Consultar documentación',
+      '🎬 *3* Video oficial dudas generales',
+      '👉 *4* Fechas Importantes (cronograma)',
+      '🤖 *5* Galgo Asistente (Ayuda)',
       '👩‍💻 *6* CONTACTO Unidad Tomas Aquino y OTAY ',
     ])
     .addAnswer(
@@ -27,14 +28,19 @@ export const menuSocial = addKeyword(['social', 'servicio social'])
       async (ctx, {flowDynamic, gotoFlow, fallBack}) => {
         const opcion = ctx.body.trim();
         
-        if (opcion === '4') {
+        if (opcion === '1') { 
           await flowDynamic('Accediendo a dudas frecuentes...');
           ctx.body = 'ver_dudas';
           return gotoFlow(flowMenuDudas);
         }
-      //para las otras opciones, utiliza el objeto respuestas
+
+        if (opcion === '5') {
+          await flowDynamic('Iniciando asistente Galgo...');
+          return gotoFlow(flowGPT);
+        }
+
         const respuestas = {
-          '1': [
+          '2': [
             '*DOCUMENTACIÓN DEL SERVICIO SOCIAL*',
             'https://www.tijuana.tecnm.mx/servicio-social/', //🗝️modificar url en cambio de documentacion🗝️
             '\n\n*Formatos para Proceso de Servicio Social*',
@@ -48,17 +54,18 @@ export const menuSocial = addKeyword(['social', 'servicio social'])
             '\nVideo de Inducción, Preguntas Generales del servicio social',
             'https://youtu.be/OCyEh-ACckA',
           ],
-          '2': [
+          '3': [
             'Si tienes dudas respecto al servicio social, consulta el video de inducción',
             'Video Inducción del Servicio Social ITT',
             '📽️ https://youtu.be/OCyEh-ACckA',
           ],
-          '3': [
+          '4': [
             '*FECHAS IMPORTANTES*',
             'Inscripción: del 5 de agosto al 19 de agosto del 2024', //🗝️modificar fecha cada semestre🗝️
-            'Periodo: Septiembre - Diciembre 2024' //🗝️modificar fecha cada semestre🗝️
+            'Periodo: Septiembre - Diciembre 2024', //🗝️modificar fecha cada semestre🗝️
+            [flowCrono]
           ],
-          '5': [
+          '6': [
             '--------UNIDAD TOMAS AQUINO-----------\n',
             '*Nayeli Irene Fernández González*', //🗝️ACTUALIZAR EN CAMBIO ADMINISTRATIVO
             'Oficina de Servicio Social Unidad Tomás Aquino',
@@ -76,13 +83,13 @@ export const menuSocial = addKeyword(['social', 'servicio social'])
           return flowDynamic(respuestas[opcion]);
         }
   
-        return fallBack('⚠️ Por favor, selecciona una opción válida (1-5)');
+        return fallBack('⚠️ Por favor, selecciona una opción válida (1-6)');
       }
     )
     .addAnswer(
       [
         '⭕ Por favor, escribe el número de tu opción que deseas consultar:',
-        '🟢 Escribe un número (1-5)', 
+        '🟢 Escribe un número (1-6)', 
         '🔴 "menu" para volver al menú dudas frecuentes',
         '🟡 "salir" para volver al menú principal'
       ],

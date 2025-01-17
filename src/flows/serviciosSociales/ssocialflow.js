@@ -1,6 +1,8 @@
 import { addKeyword, EVENTS } from '@builderbot/bot';
 
 import { handleQueue } from '../../utils/chatgpt.js';
+import { menuSocial } from './menuSocial.js';
+import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
 
 const flowContactoSS = addKeyword([
   'Contacto',
@@ -93,7 +95,7 @@ const flowFechas = addKeyword(['fechas', 'fecha', 'tiempo', '3'])
 
 const flowGPT = addKeyword(['documentos servicio social', 'preguntas', '5'])
   .addAnswer(
-    '¿Cuáles son tus dudas respecto al servicio social?',
+    '*🤖¿Cuáles son tus dudas respecto al servicio social?*',
     null,
     async () => {
       await handleQueue.handleMsgChatGPT(PROMP); //uso de la función de handleMsgChatGPT para obtener la respuesta del chatgpt
@@ -101,8 +103,8 @@ const flowGPT = addKeyword(['documentos servicio social', 'preguntas', '5'])
   )
   .addAnswer(
     [
-      '🟢Específica el que documento tu duda,',
-      '\n⭕Punto (número) dónde tienes problemas del llenado',
+      '🤖Específica el que documento tu duda,',
+      '\n⭕🤖Punto (número) dónde tienes problemas del llenado',
     ],
     { capture: true },
     async (ctx, { flowDynamic }) => {
