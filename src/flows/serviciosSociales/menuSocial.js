@@ -2,7 +2,7 @@ import { addKeyword } from '@builderbot/bot';
 import { flowMenuDudas } from './menuDudasFlow.js';
 import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
 import { flowCrono } from './ssocialflow.js';
-import { flowGPT } from './ssocialflow.js';
+import { gptFlow } from './gptFlow.js';
 //import { duda1, duda2, duda3, duda4, duda5, duda6, duda7, duda8, duda9, duda10 } from './dudasFrecuentes/dudasFlows.js';
 // O Opción 2: Importar todo como un objeto
 //import * as flows from './ssocialflow.js';
@@ -36,7 +36,7 @@ export const menuSocial = addKeyword(['social', 'servicio social'])
 
         if (opcion === '5') {
           await flowDynamic('Iniciando asistente Galgo...');
-          return gotoFlow(flowGPT);
+          return gotoFlow(gptFlow);
         }
         if (opcion === '4') {
           await flowDynamic(['*FECHAS IMPORTANTES*',

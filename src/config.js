@@ -2,11 +2,20 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const {
-  ASSISTANT_ID = '',
-  OPENAI_API_KEY = '',
+  ASSISTANT_ID,
+  OPENAI_API_KEY,
   PORT = 3008,
-  MONGO_DB_URI = '',
-  MONGO_DB_NAME = '',
 } = process.env;
 
-export { PORT, ASSISTANT_ID, OPENAI_API_KEY, MONGO_DB_URI, MONGO_DB_NAME };
+// Verificación de variables críticas
+if (!OPENAI_API_KEY || !ASSISTANT_ID) {
+  console.error('⚠️ Faltan variables de entorno críticas:');
+  if (!OPENAI_API_KEY) console.error('- OPENAI_API_KEY no está definida');
+  if (!ASSISTANT_ID) console.error('- ASSISTANT_ID no está definido');
+}
+
+export { 
+  PORT, 
+  ASSISTANT_ID, 
+  OPENAI_API_KEY 
+};

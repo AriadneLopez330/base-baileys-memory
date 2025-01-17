@@ -8,6 +8,8 @@ import { visIndus } from './flows/visitasIndustriales/visitasmenu.js'
 import { flowMenuDudas } from './flows/serviciosSociales/menuDudasFlow.js'
 import { flowResidencia } from './flows/residencias/residenciaFlow.js'
 import { menuPrincipalFlow } from './flows/menuPrincipalFlow.js'
+import { gptFlow } from './flows/serviciosSociales/gptFlow.js'
+
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
@@ -31,7 +33,8 @@ const main = async () => {
     flowGracias,
     flowMenuDudas,
     flowResidencia,
-    flowCrono
+    flowCrono,
+    gptFlow
     ])
     const adapterProvider = createProvider(Provider)
     const adapterDB = new Database({ filename: 'db.json' })

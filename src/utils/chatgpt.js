@@ -1,23 +1,45 @@
 import 'dotenv/config';
 import { toAsk } from '@builderbot-plugins/openai-assistants';
 import { typing } from './presence.js';
-import { ASSISTANT_ID } from '../config.js';
+import { ASSISTANT_ID, OPENAI_API_KEY } from '../config.js';
 import { userQueues, userLocks } from './state.js';
-const processUserMessage = async (ctx, { flowDynamic, state, provider }) => {
-  await typing(ctx, provider);
-  const response = await toAsk(ASSISTANT_ID, ctx.body, state);
 
-  const chunks = response.split(/\n\n+/);
-  for (const chunk of chunks) {
-    const cleanedChunk = chunk.trim().replace(/【.*?】[ ] /g, '');
-    await flowDynamic([{ body: cleanedChunk }]);
+const processUserMessage = async (ctx, { flowDynamic, state, provider }) => {
+  try {
+    if (!OPENAI_API_KEY || !ASSISTANT_ID) {
+      throw new Error('Credenciales de OpenAI no configuradas');
+    }
+
+    await typing(ctx, provider);
+    console.log('Procesando mensaje con Assistant ID:', ASSISTANT_ID);
+    
+    const response = await toAsk(ASSISTANT_ID, ctx.body, state, OPENAI_API_KEY);
+    console.log('Respuesta recibida:', response);
+
+    if (!response) {
+      throw new Error('No se recibió respuesta del asistente');
+    }
+
+    const chunks = response.split(/\n\n+/);
+    for (const chunk of chunks) {
+      const cleanedChunk = chunk.trim()
+        .replace(/【.*?】/g, '')
+        .replace(/\[\d+:\d+†source\]/g, '')
+        .replace(/^\s+|\s+$/g, '');
+      
+      if (cleanedChunk) {
+        await flowDynamic([{ body: cleanedChunk }]);
+      }
+    }
+  } catch (error) {
+    console.error('Error detallado en processUserMessage:', error);
+    await flowDynamic('❌ Error al procesar tu consulta. Por favor, verifica que tu pregunta sea sobre servicio social.');
   }
 };
 
 const handleQueue = async userId => {
   const queue = userQueues.get(userId);
 
-  // Verificación de la cola
   if (!queue) {
     console.error(`Queue not found for user ${userId}`);
     return;

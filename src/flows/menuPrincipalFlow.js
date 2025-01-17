@@ -1,9 +1,10 @@
 import { addKeyword, EVENTS } from '@builderbot/bot';
 import { menuSocial } from './serviciosSociales/menuSocial.js';
-import {flowGPT } from './serviciosSociales/ssocialflow.js';
+//import {flowGPT } from './serviciosSociales/ssocialflow.js';
 // import { flowGracias } from './graciasFlow.js';
 import { visIndus } from './visitasIndustriales/visitasmenu.js';
 import { flowResidencia } from './residencias/residenciaFlow.js';
+import { gptFlow } from './serviciosSociales/gptFlow.js';
 //import { flowMenuDudas } from './serviciosSociales/menuDudasFlow.js';
 
 ///////////////////flujo primario para el departamento de manera general///////////////////////
@@ -26,7 +27,7 @@ export const menuPrincipalFlow = addKeyword(EVENTS.WELCOME)
         case '1':
           return gotoFlow(menuSocial);
         case '2':
-          return gotoFlow(flowGPT);
+          return gotoFlow(gptFlow);
         case '3':
           return gotoFlow(visIndus);
         case '4':

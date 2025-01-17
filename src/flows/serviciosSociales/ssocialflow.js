@@ -3,6 +3,7 @@ import { addKeyword, EVENTS } from '@builderbot/bot';
 import { handleQueue } from '../../utils/chatgpt.js';
 import { menuSocial } from './menuSocial.js';
 import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
+import {gptFlow} from '../serviciosSociales/gptFlow.js';
 
 const flowContactoSS = addKeyword([
   'Contacto',
@@ -136,4 +137,4 @@ const flowGPT = addKeyword(['documentos servicio social', 'preguntas', '5'])
   );
 
 
-export { flowCrono, flowDocs, flowVideo, flowFechas, flowGPT, flowContactoSS };
+export { flowCrono, flowDocs, flowVideo, flowFechas, flowContactoSS };
