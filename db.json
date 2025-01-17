@@ -1,14 +1,15 @@
 [
   {
-    "ref": "af58b144-2ddd-4b11-b0ae-245dcb5cddeb",
-    "answer": "HG",
+    "ref": "2de3d881-0f41-4448-8d6a-ba52db467356",
+    "keyword": "f45d91c687f456af42670ec03aa30f82",
+    "answer": "GH",
     "options": {},
     "from": "5216642673466",
-    "refSerialize": "f913d6264fa38acb87410c274524babd"
+    "refSerialize": "6337d40af389f5e3ec329e9eaae121d9"
   },
   {
-    "ref": "ans_11fafab5-9c53-434e-a10a-bbad3cf26e88",
-    "keyword": "key_bdcc8241-5603-4148-ac35-f938c677a8e6",
+    "ref": "ans_8bd414b9-98cd-4bd1-8ccb-eda221a3ddf1",
+    "keyword": "key_909dd19a-add8-47f4-8ad0-d33cd4e72692",
     "answer": "*¡Bienvenido al Departamento de Gestión Tecnológica y Vinculación!* 👋\n\nSelecciona el servicio que necesitas:\n\n1️⃣ *Servicio Social*\n2️⃣ *Galgo Asistente servicio social*\n3️⃣ *Visitas Industriales*\n4️⃣ *Residencias Profesionales*",
     "options": {
       "buttons": [],
@@ -18,12 +19,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "750ad112d326c5b9f6cae63a4c550f8e",
+    "refSerialize": "5380a043a087ed324290bd3d954e0979",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_b7f096d8-ef66-47e8-8a3e-df99fd17fa4c",
-    "keyword": "ans_11fafab5-9c53-434e-a10a-bbad3cf26e88",
+    "ref": "ans_2c293daa-7379-42b9-aa78-7f9d2264b417",
+    "keyword": "ans_8bd414b9-98cd-4bd1-8ccb-eda221a3ddf1",
     "answer": "Por favor, escribe el número de tu opción:",
     "options": {
       "buttons": [],
@@ -33,12 +34,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "3fcc065dc0be18bc50ae87f38a45a9e4",
+    "refSerialize": "e375d9eda37a6966e9d9baba75866402",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_d03c5555-981a-4af5-8642-3a3a2dd44c30",
-    "keyword": "ans_b7f096d8-ef66-47e8-8a3e-df99fd17fa4c",
+    "ref": "ans_f75552d3-6c11-48cb-a005-98dc0f44c55e",
+    "keyword": "ans_2c293daa-7379-42b9-aa78-7f9d2264b417",
     "answer": "__capture_only_intended__",
     "options": {
       "buttons": [],
@@ -48,51 +49,21 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "bfcedd1cf39bc4257d7f6b15ca9a0ac3",
+    "refSerialize": "8c66ed7b09da46cd49042e49221c69f5",
     "from": "5216642673466"
   },
   {
-    "ref": "2342dfbd-db59-4e35-ad8a-b0d5fb144269",
-    "keyword": "bfcedd1cf39bc4257d7f6b15ca9a0ac3",
-    "answer": "1",
+    "ref": "ff5eb5a7-f953-41b4-a117-0fa78c3042c6",
+    "keyword": "8c66ed7b09da46cd49042e49221c69f5",
+    "answer": "2",
     "options": {},
     "from": "5216642673466",
-    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
   },
   {
-    "ref": "ans_cd247525-f719-46f3-a41f-1756fb71e8dd",
-    "keyword": "key_8da7ab0e-d519-4e54-9d93-e17bb5f9a4bf",
-    "answer": "¿Como puedo ayudarte?😁",
-    "options": {
-      "buttons": [],
-      "capture": false,
-      "delay": 0,
-      "nested": [],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "9240b457db8da39a4f0a200e648f7f46",
-    "from": "5216642673466"
-  },
-  {
-    "ref": "ans_f627f423-4bd4-48c2-b5e4-572d8b5bdee9",
-    "keyword": "ans_cd247525-f719-46f3-a41f-1756fb71e8dd",
-    "answer": "Te comparto los siguientes links de interés sobre el proceso\n\n                             *SERVICIO SOCIAL*\n_Departamento De Gestión Tecnológica Y Vinculación_\n\n🤔 *1* Dudas Frecuentes de los alumnos\n🧾 *2* Consultar documentación\n🎬 *3* Video oficial dudas generales\n👉 *4* Fechas Importantes (cronograma)\n🤖 *5* Galgo Asistente (Ayuda)\n👩‍💻 *6* CONTACTO Unidad Tomas Aquino y OTAY ",
-    "options": {
-      "buttons": [],
-      "capture": false,
-      "delay": 0,
-      "nested": [],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "62ec06b43e79163d079673d81abfdeb8",
-    "from": "5216642673466"
-  },
-  {
-    "ref": "ans_400a243d-d21d-4dc0-b158-7c9ef6437c97",
-    "keyword": "ans_f627f423-4bd4-48c2-b5e4-572d8b5bdee9",
-    "answer": "__call_action__",
+    "ref": "ans_68e8ef48-58a2-4729-a373-dd387740d38c",
+    "keyword": "key_acf0a294-5180-4fed-814d-928c86c275c1",
+    "answer": "*🤖¿Cuáles son tus dudas respecto al servicio social?*",
     "options": {
       "buttons": [],
       "capture": false,
@@ -101,13 +72,12 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "d8e6bfaa2aaef6b0d8381fc25e61da6e",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_a2eafea8-6a06-4e8a-bea4-9e9f74003215",
-    "keyword": "ans_400a243d-d21d-4dc0-b158-7c9ef6437c97",
-    "answer": "Por favor, escribe el número de tu opción que deseas consultar:",
+    "ref": "ans_c5c4ba1a-6d14-4400-b1ae-0541d70a088e",
+    "keyword": "ans_68e8ef48-58a2-4729-a373-dd387740d38c",
+    "answer": "🤖¿Qué documento quieres consultar?\n_Especificaciones técnicas_\n► Nombre del documento\n► Número del punto a consultar\nEjemplo: Del documento solicitud con foto quiero saber qué debo poner en Nombre del Programa (18) .\n_Recuerda consultar primero las dudas frecuentes ubicadas en el menú principal >> 4 dudas frecuentes >> Listado._",
     "options": {
       "buttons": [],
       "capture": false,
@@ -116,12 +86,11 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "f7ce7815f463ca846191ee6b902e249c",
     "from": "5216642673466"
   },
   {
-    "ref": "ans_d198d571-c4a9-414a-9409-3c67cab44f26",
-    "keyword": "ans_a2eafea8-6a06-4e8a-bea4-9e9f74003215",
+    "ref": "ans_5dcdc52e-47fc-4281-a88d-4c020b481c77",
+    "keyword": "ans_c5c4ba1a-6d14-4400-b1ae-0541d70a088e",
     "answer": "__capture_only_intended__",
     "options": {
       "buttons": [],
@@ -131,100 +100,6 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "d23dd28d2a390ddb95bb8ba4c096240f",
-    "from": "5216642673466"
-  },
-  {
-    "ref": "cde891c4-19b3-42ae-89a4-1770d4e1dc55",
-    "keyword": "d23dd28d2a390ddb95bb8ba4c096240f",
-    "answer": "4",
-    "options": {},
-    "from": "5216642673466",
-    "refSerialize": "e8139b7fa2fbc1b48f247924f8ad1961"
-  },
-  {
-    "ref": "1c46f7e2-941a-492c-b5ed-17091c837af6",
-    "keyword": null,
-    "answer": "*FECHAS IMPORTANTES*",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "5216642673466",
-    "refSerialize": "bd934fe786120f49e069f2b00d16c060"
-  },
-  {
-    "ref": "061c75b0-e0da-4f05-a77a-766691b1dadf",
-    "keyword": null,
-    "answer": "Inscripción: del 5 de agosto al 19 de agosto del 2024",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "5216642673466",
-    "refSerialize": "0cd54227120aacbc48dfbb67fe07be90"
-  },
-  {
-    "ref": "cb4ef0cf-fb40-41eb-b58d-7c9fce4fbbc7",
-    "keyword": null,
-    "answer": "Periodo: Septiembre - Diciembre 2024",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "5216642673466",
-    "refSerialize": "f2fdbc6a57749a99be325f35a2d1ab0f"
-  },
-  {
-    "ref": "ans_bd9541d9-9222-471d-bae5-6ae5db286c8c",
-    "keyword": "ans_d198d571-c4a9-414a-9409-3c67cab44f26",
-    "answer": "⭕ Por favor, escribe el número de tu opción que deseas consultar:\n🟢 Escribe un número (1-6)\n🔴 \"menu\" para volver al menú dudas frecuentes\n🟡 \"salir\" para volver al menú principal",
-    "options": {
-      "buttons": [],
-      "capture": false,
-      "delay": 0,
-      "nested": [],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "d4f51749dd403737e396f45afe42dfae",
-    "from": "5216642673466"
-  },
-  {
-    "ref": "ans_6379814b-8a57-4012-90df-2235d6d55408",
-    "keyword": "ans_bd9541d9-9222-471d-bae5-6ae5db286c8c",
-    "answer": "__capture_only_intended__",
-    "options": {
-      "buttons": [],
-      "capture": true,
-      "delay": 0,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "861b6d3870617a42401c9b6d0914cd94",
-    "from": "5216642673466"
-  },
-  {
-    "ref": "ans_2435e1e7-933c-48fd-bf84-b687065b7d4f",
-    "keyword": "key_60af3b8d-4b9f-4eac-bdd2-46f83350c239",
-    "answer": "*SERVICIO SOCIAL*\n_CRONOGRAMA DE ACTIVIDADES_",
-    "options": {
-      "media": "https://www.tijuana.tecnm.mx/wp-content/uploads/2024/08/Cronograma-de-Actividades-del-servicio-social-ago-dic24-1.png",
-      "buttons": [],
-      "capture": false,
-      "delay": 0,
-      "nested": [],
-      "keyword": {},
-      "callback": false
-    },
-    "refSerialize": "f45d91c687f456af42670ec03aa30f82",
     "from": "5216642673466"
   }
 ]

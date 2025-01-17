@@ -103,12 +103,12 @@ const flowGPT = addKeyword(['documentos servicio social', 'preguntas', '5'])
   )
   .addAnswer(
     [
-      '🤖¿Qué documento quieres consultar?',
-      '_Especificaciones técnicas_',
-      '► Nombre del documento',
-      '► Número del punto a consultar',
-      'Ejemplo: Del documento solicitud con foto quiero saber qué debo poner en Nombre del Programa (18) .',
-      '_Recuerda consultar primero las dudas frecuentes ubicadas en el menú principal >> 4 dudas frecuentes >> Listado._',
+      '🤖*¿Qué documento quieres consultar?*',
+      '📌_Especificaciones técnicas_',
+      '🔸 Nombre del documento',
+      '🔸 Número del punto a consultar',
+      '\nEjemplo: Del documento solicitud con foto quiero saber qué debo poner en Nombre del Programa (18) .',
+      '\n_Recuerda consultar primero las dudas frecuentes ubicadas en el menú principal >> 4 dudas frecuentes >> Listado._',
       ],
     { capture: true },
     async (ctx, { flowDynamic }) => {
