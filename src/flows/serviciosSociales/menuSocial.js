@@ -3,6 +3,7 @@ import { flowMenuDudas } from './menuDudasFlow.js';
 import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
 import { flowCrono } from './ssocialflow.js';
 import { gptFlow } from './gptFlow.js';
+import { flowGracias } from '../graciasFlow.js';
 //import { duda1, duda2, duda3, duda4, duda5, duda6, duda7, duda8, duda9, duda10 } from './dudasFrecuentes/dudasFlows.js';
 // O Opción 2: Importar todo como un objeto
 //import * as flows from './ssocialflow.js';

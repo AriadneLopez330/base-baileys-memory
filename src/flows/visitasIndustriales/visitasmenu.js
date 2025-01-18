@@ -1,5 +1,6 @@
 import { addKeyword } from '@builderbot/bot';
 import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
+import { flowGracias } from '../graciasFlow.js';
 
 export const visIndus = addKeyword(['visitas industriales', 'visitas', 'Visitas'])
   .addAnswer('Bienvenido al área de Visitas industriales')

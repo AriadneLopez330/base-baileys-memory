@@ -1,5 +1,6 @@
 import { addKeyword } from '@builderbot/bot';
 import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
+import { flowGracias } from '../graciasFlow.js';
 
 // Definir respuestasR fuera del flujo
 const respuestasR = {
@@ -16,9 +17,7 @@ const respuestasR = {
   '4': [
     '*Residencias Profesionales*',
     '_Departamento De Gestión Tecnológica Y Vinculación_\n',
-    'M.A. Karen Zavala Rodríguez',
-    'Correo: residencias@tectijuana.edu.mx',
-    'Teléfono: (664)6 07 84 23 ext. 124'
+    'M.A. Karen Zavala Rodríguez\nCorreo: residencias@tectijuana.edu.mx\nTeléfono: (664)6 07 84 23 ext. 124'
   ]
 };
 

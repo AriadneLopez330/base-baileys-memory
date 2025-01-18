@@ -1,9 +1,5 @@
 import { addKeyword, EVENTS } from '@builderbot/bot';
 
-import { handleQueue } from '../../utils/chatgpt.js';
-import { menuSocial } from './menuSocial.js';
-import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
-import {gptFlow} from '../serviciosSociales/gptFlow.js';
 
 const flowContactoSS = addKeyword([
   'Contacto',
@@ -23,20 +19,7 @@ const flowContactoSS = addKeyword([
   'Teléfono: (664) 607-84-00 Ext. 204', //🗝️ACTUALIZAR EN CAMBIO ADMINISTRATIVO
   '<serviciosocialotay@tectijuana.edu.mx>',
 ]);
-// export const flowMenu = addKeyword(['Menu', 'menú'])
-//   .addAnswer(['¡Hasta la próxima, Galgo!', '*Menú* si tienes mas consultas'])
-//   .addAnswer(
-//     { capture: true, buttons: [{ body: 'Ir a Menú' }] },
 
-//     async (ctx, { endFlow }) => {
-//       if (ctx.body == 'Ir a Menú')
-//         //////////CHECAR-------------------
-//         return endFlow({
-//           body: '❌ Su solicitud ha sido cancelada ❌', // Aquí terminamos el flow si la condición se cumple
-//         });
-//       return flowMenu();
-//     },
-//   );
 const flowCrono = addKeyword([
   'Cronograma',
   'crono',
@@ -90,51 +73,6 @@ const flowFechas = addKeyword(['fechas', 'fecha', 'tiempo', '3'])
     '',
   ])
 
-///////////////////////////////////
-
-//chatgpt
-
-const flowGPT = addKeyword(['documentos servicio social', 'preguntas', '5'])
-  .addAnswer(
-    '*🤖¿Cuáles son tus dudas respecto al servicio social?*',
-    null,
-    async () => {
-      await handleQueue.handleMsgChatGPT(PROMP); //uso de la función de handleMsgChatGPT para obtener la respuesta del chatgpt
-    },
-  )
-  .addAnswer(
-    [
-      '🤖*¿Qué documento quieres consultar?*',
-      '📌_Especificaciones técnicas_',
-      '🔸 Nombre del documento',
-      '🔸 Número del punto a consultar',
-      '\nEjemplo: Del documento solicitud con foto quiero saber qué debo poner en Nombre del Programa (18) .',
-      '\n_Recuerda consultar primero las dudas frecuentes ubicadas en el menú principal >> 4 dudas frecuentes >> Listado._',
-      ],
-    { capture: true },
-    async (ctx, { flowDynamic }) => {
-      const respuesta = await handleQueue.handleMsgChatGPT(ctx.body); //uso de la función de handleMsgChatGPT para obtener la respuesta del chatgpt
-      const mensaje = respuesta.text; // aquí se encuentra la respuesta
-      if (ctx.body.toString() !== 'terminar consulta') {
-        await flowDynamic(mensaje);
-      }
-    },
-  )
-  .addAnswer(
-    [ 
-      '🔴 "social" para volver al menú dudas frecuentes',
-      '🟡 "salir" para volver al menú principal'
-    ],
-    { capture: true },
-    async (ctx, { gotoFlow }) => {
-      if (ctx.body.toLowerCase() === 'social') {
-        return gotoFlow(menuSocial);
-      }
-      else if (ctx.body.toLowerCase() === 'salir') {
-          return gotoFlow(menuPrincipalFlow);
-      }
-    }
-  );
 
 
 export { flowCrono, flowDocs, flowVideo, flowFechas, flowContactoSS };
