@@ -74,7 +74,7 @@ export const visIndus = addKeyword(['visitas industriales', 'visitas', 'Visitas'
         
         ],
         '5': [
-          '*Encarada de visitas industriales*',
+          '*Encargada de visitas industriales*',
           '• M.A. Marisol Chávez De Landa \nCorreo: visitasindustriales@tectijuana.edu.mx\nTeléfono: (664) 607-84-00. ext. 143',
         ]
       };

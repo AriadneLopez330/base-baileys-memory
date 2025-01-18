@@ -32,7 +32,7 @@ import { menuPrincipalFlow } from '../menuPrincipalFlow.js';
             '*REGISTRO DE SERVICIO SOCIAL*',
             '• Es necesario realizar el curso de inducción',
             '• Ingresa al sitio Oficial de Servicio Social',
-            '• 👉https://sitec.tijuana.tecnm.mx/servicio_social/index.php👈',
+            '• 👉https://www.tijuana.tecnm.mx/servicio-social/👈',
             '• *Ingresa tu matrícula* y pulsa _Curso de inducción_',
           ],
           '2': [
